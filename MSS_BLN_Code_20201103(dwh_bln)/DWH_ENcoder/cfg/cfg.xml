@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration elversion="6.1">
+    <name>TOGOCEL_CFG_NOKIA_MSS_DWH_ENCODER</name>
+    <version major="1" minor="0" defect="1" patch=""/>
+    <description>Encoder for DWH/CMS/CDR Server.</description>
+    <type>
+        <collector>false</collector>
+        <intermediate>false</intermediate>
+        <decoder>false</decoder>
+        <businesslogic>false</businesslogic>
+        <blt>false</blt>
+        <encoder>true</encoder>
+        <distributor>false</distributor>
+        <standalone>false</standalone>
+        <interface>false</interface>
+        <flink>false</flink>
+    </type>
+    <application name="EL_APP_MULTI_FORMAT_ENCODER" min_major="1" min_minor="5" min_defect="10" exactversion="false"/>
+    <nodebase>c_node</nodebase>
+    <attributes>
+        <application_commit>false</application_commit>
+        <schedulable>false</schedulable>
+        <realtime>false</realtime>
+    </attributes>
+    <scalability>
+        <none></none>
+    </scalability>
+    <parameters>
+        <parameter name="OutputFileNameCreationMask">
+            <value>Postmed_Nokia_MSS_&amp;CREATIONTIME(%Y%m%d%H%M%S)_&amp;FIRST(#filename)</value>
+            <description>Defines the format of the output file.</description>
+            <value_type>
+                <any/>
+            </value_type>
+            <attributes>
+                <mandatory>true</mandatory>
+                <hidden>false</hidden>
+                <environment>false</environment>
+                <installation_specific>false</installation_specific>
+            </attributes>
+        </parameter>
+        <parameter name="OutputDescriptionFileName">
+            <value>dwh.xml</value>
+            <description>Defines the name of the output description file.</description>
+            <value_type>
+                <any/>
+            </value_type>
+            <attributes>
+                <mandatory>true</mandatory>
+                <hidden>false</hidden>
+                <environment>false</environment>
+                <installation_specific>false</installation_specific>
+            </attributes>
+        </parameter>
+    </parameters>
+    <files>
+        <file os="AnyOS" path="./" editable="true" name="AnyOS/dwh.xml">
+            <export>
+                <libpath>false</libpath>
+                <perl5lib>false</perl5lib>
+            </export>
+        </file>
+    </files>
+    <messages/>
+    <docs/>
+    <libraries/>
+    <storages>
+        <storage name="REJ">
+            <description>Storage for Rejected data</description>
+        </storage>
+    </storages>
+    <links>
+        <link>ENCODED</link>
+    </links>
+    <auditkeys/>
+</configuration>

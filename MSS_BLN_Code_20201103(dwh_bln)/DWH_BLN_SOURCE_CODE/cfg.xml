@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration elversion="6.1">
+    <name>TOGOCEL_CFG_NOKIA_MSS_DWH_BLN</name>
+    <version major="1" minor="0" defect="0" patch="PRE1"/>
+    <description>Business Logic Node for Togocel.</description>
+    <type>
+        <collector>false</collector>
+        <intermediate>false</intermediate>
+        <decoder>false</decoder>
+        <businesslogic>true</businesslogic>
+        <blt>false</blt>
+        <encoder>false</encoder>
+        <distributor>false</distributor>
+        <standalone>false</standalone>
+        <interface>false</interface>
+        <flink>false</flink>
+    </type>
+    <nodebase>c_node</nodebase>
+    <attributes>
+        <application_commit>false</application_commit>
+        <schedulable>false</schedulable>
+        <realtime>false</realtime>
+    </attributes>
+    <scalability>
+        <free></free>
+    </scalability>
+    <parameters/>
+    <files>
+        <file os="Linux" path="./" editable="false" name="Linux/app_togocel_processing_bln.so">
+            <export>
+                <libpath>false</libpath>
+                <perl5lib>false</perl5lib>
+            </export>
+        </file>
+    </files>
+    <messages/>
+    <docs/>
+    <libraries/>
+    <storages>
+        <storage name="MISSING_FIELDS">
+            <description>Storage for missing_fields data</description>
+        </storage>
+        <storage name="INVALID_TIMESTAMP">
+            <description>Storage for invalid_timestamp data</description>
+        </storage>
+    </storages>
+    <links>
+        <link>DWH</link>
+    </links>
+    <auditkeys/>
+</configuration>
