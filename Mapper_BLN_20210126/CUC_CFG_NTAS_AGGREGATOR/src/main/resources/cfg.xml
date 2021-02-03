@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration elversion="6.1">
+    <name>CUC_CFG_NTAS_AGGREGATOR</name>
+    <version defect="${version.defect}" major="${version.major}" minor="${version.minor}" patch="${version.patch}"/>
+    <description>CUC NTAS Aggregator with mapping</description>
+    <nodebase>c_node</nodebase>
+    <type>
+        <collector>false</collector>
+        <intermediate>false</intermediate>
+        <interface>false</interface>
+        <decoder>false</decoder>
+        <businesslogic>true</businesslogic>
+        <blt>false</blt>
+        <encoder>false</encoder>
+        <distributor>false</distributor>
+        <standalone>false</standalone>
+    </type>
+    <attributes>
+        <application_commit>false</application_commit>
+        <schedulable>false</schedulable>
+        <realtime>false</realtime>
+    </attributes>
+    <scalability>
+        <none/>
+    </scalability>
+    <libraries>
+        <library exactversion="false" min_major="1" min_minor="3" min_defect="2" name="EL_LIB_TRS" />
+    </libraries>
+    <parameters>
+        <parameter name="TRS_threshold">
+            <value>90</value>
+            <description>Percentage threshold for TRS in % ( 90% by default) </description>
+            <check_regexp pattern=""/>
+            <value_type>
+                <any/>
+            </value_type>
+            <attributes>
+                <mandatory>true</mandatory>
+                <installation_specific>false</installation_specific>
+                <environment>false</environment>
+                <hidden>false</hidden>
+            </attributes>
+        </parameter>
+        <parameter name="PartialBufferedACRLimit">
+            <value>1</value>
+            <description>Limit for maximum buffered ACRs which triggers a partial CDR (1 means a CDR for sent for every ACR)</description>
+            <check_regexp pattern=""/>
+            <value_type>
+                <numeric min_value="0"/>
+            </value_type>
+            <attributes>
+                <mandatory>false</mandatory>
+                <installation_specific>false</installation_specific>
+                <environment>false</environment>
+                <hidden>false</hidden>
+            </attributes>
+        </parameter>
+        <parameter name="PartialTriggerTypeValues">
+            <value>1,2</value>
+            <description>A comma separated list of values for Trigger-Type AVP which should trigger partial CDR sending.</description>
+            <check_regexp pattern=""/>
+            <value_type>
+                <any/>
+            </value_type>
+            <attributes>
+                <mandatory>false</mandatory>
+                <installation_specific>false</installation_specific>
+                <environment>false</environment>
+                <hidden>false</hidden>
+            </attributes>
+        </parameter>
+        <parameter name="SessionIdFields">
+            <value>Session-Id</value>
+            <description>A space-separated list of field names which are used to build the session key.</description>
+            <check_regexp pattern=""/>
+            <value_type>
+                <any/>
+            </value_type>
+            <attributes>
+                <mandatory>false</mandatory>
+                <installation_specific>false</installation_specific>
+                <environment>false</environment>
+                <hidden>false</hidden>
+            </attributes>
+        </parameter>		
+        <parameter name="SessionTimeout">
+            <value>86400</value>
+            <description>Opened CDR gets closed if no partial CDR was written in given amount of seconds</description>
+            <check_regexp pattern="^[0-9]+$"/>
+            <value_type>
+                <numeric min_value="1"/>
+            </value_type>
+            <attributes>
+                <mandatory>true</mandatory>
+                <installation_specific>false</installation_specific>
+                <environment>false</environment>
+                <hidden>false</hidden>
+            </attributes>
+        </parameter>
+        <parameter name="SessionTimeoutInterimInterval">
+            <value>0</value>
+            <description>if set, overwrites Acct-Interim-Interval in calculating timeout for opened CDR</description>
+            <check_regexp pattern="^[0-9]*$"/>
+            <value_type>
+                <numeric min_value="0"/>
+            </value_type>
+            <attributes>
+                <mandatory>false</mandatory>
+                <installation_specific>false</installation_specific>
+                <environment>false</environment>
+                <hidden>false</hidden>
+            </attributes>
+        </parameter>
+        <parameter name="SessionTimeoutInterimFactor">
+            <value>3</value>
+            <description>Multiplier in calculating timeout for opened CDR if no partial CDR was written</description>
+            <check_regexp pattern="^[0-9]*$"/>
+            <value_type>
+                <numeric min_value="0"/>
+            </value_type>
+            <attributes>
+                <mandatory>false</mandatory>
+                <installation_specific>false</installation_specific>
+                <environment>false</environment>
+                <hidden>false</hidden>
+            </attributes>
+        </parameter>        
+        <parameter name="RecordSeqNumberInitial">
+            <value>1</value>
+            <description>Initial number for recordSequenceNumber field</description>
+            <check_regexp pattern="^[01]$"/>
+            <value_type>
+                <numeric min_value="0" max_value="1"/>
+            </value_type>
+            <attributes>
+                <mandatory>false</mandatory>
+                <installation_specific>false</installation_specific>
+                <environment>false</environment>
+                <hidden>false</hidden>
+            </attributes>
+        </parameter>
+        <parameter name="RecordSeqNumberKeepLastEmpty">
+            <value>Empty for Single</value>
+            <description>Multiplier in calculating timeout for opened CDR if no partial CDR was written</description>
+            <check_regexp pattern=""/>
+            <value_type>
+                <list>
+                    <element>Empty for Single</element>
+                    <element>Always Empty</element>
+                    <element>Never Empty</element>
+                </list>
+            </value_type>
+            <attributes>
+                <mandatory>false</mandatory>
+                <installation_specific>false</installation_specific>
+                <environment>false</environment>
+                <hidden>false</hidden>
+            </attributes>
+        </parameter>
+        <parameter name="TimeZoneDesignator">
+            <value></value>
+            <description>Timezone used in timestamp fields</description>
+            <check_regexp pattern="^Z|[+-][0-9][0-9](:[0-6][0-9])?"/>
+            <value_type>
+                <any/>
+            </value_type>
+            <attributes>
+                <mandatory>false</mandatory>
+                <installation_specific>false</installation_specific>
+                <environment>false</environment>
+                <hidden>false</hidden>
+            </attributes>
+        </parameter>
+    </parameters>
+    <messages>
+        <message key="AGGR001" type="E">
+            <text>Node init(): Unable to initialize TRS library. Aborting...</text>
+            <explanation>Please check TRS library.</explanation>
+        </message>
+        <message key="AGGR002" type="E">
+            <text>Node init(): Unable to initialize SQL library. Aborting...</text>
+            <explanation>Please check SLQ library.</explanation>
+        </message>
+        <message key="AGGR003" type="E">
+            <text>TRS node init error : Unable to create handle to table. Aborting...</text>
+            <explanation>Please check the TRS table.</explanation>
+        </message>
+        <message key="AGGR004" type="E">
+            <text>Mandatory parameter ExpirationTime incorrect or missing value. Aborting...</text>
+            <explanation>Please check parameter value.</explanation>
+        </message>
+        <message key="AGGR005" type="E">
+            <text>Mandatory parameter TRS_threshold incorrect or missing value. Aborting...</text>
+            <explanation>Please check parameter value.</explanation>
+        </message> 
+        <message key="AGGR006" type="E">
+            <text>Cannot set session_id parameter to select statement. Aborting...</text>
+            <explanation>Please check log.</explanation>
+        </message>
+        <message key="AGGR007" type="E">
+            <text>Cannot execute select statement. Aborting...</text>
+            <explanation>Please check log.</explanation>
+        </message>
+        <message key="AGGR008" type="E">
+            <text>Error while executing select statement. Aborting...</text>
+            <explanation>Please check log.</explanation>
+        </message>
+        <message key="AGGR009" type="E">
+            <text>Error while executing insert statement. Aborting...</text>
+            <explanation>Please check log.</explanation>
+        </message>
+        <message key="AGGR010" type="E">
+            <text>Error while retrieving record from trs. Aborting...</text>
+            <explanation>Please check log.</explanation>
+        </message>
+        <message key="AGGR011" type="E">
+            <text>Error while updating record in trs. Aborting...</text>
+            <explanation>Please check log.</explanation>
+        </message>		
+        <message key="AGGR012" type="E">
+            <text>TRS is full. Please resize the TRS.</text>
+            <explanation>You can find TRS configuration in file .odbc.ini</explanation>
+        </message>	
+        <message key="AGGR013" type="E">
+            <text>Error while selecting timed out records from TRS.</text>
+            <explanation>This function is executed in node_timer() or node_flush().</explanation>
+        </message>
+        <message key="AGGR014" type="W">
+            <text>Wrong data format at field with address: '%s'</text>
+            <explanation>Please check data format</explanation>
+        </message>
+        <message key="AGGR019" type="E">
+            <text>Unknown record type. Aborting....</text>
+            <explanation>Please check AVP Accounting-Record-Type (1-event,2-start,3-interim,4-stop)</explanation>
+        </message>
+        <message key="AGGR020" type="E">
+            <text>Empty session-id. Aborting....</text>
+            <explanation>Please check AVP session-id</explanation>
+        </message>
+        <message key="AGGR021" type="E">
+            <text>split_string(): Unable to allocate memory. Aborting...</text>
+            <explanation>Make sure the aggregator has enough memory.</explanation>
+        </message>
+        <message key="AGGR022" type="E">
+            <text>do_compress(): Unknown block or field: '%s'</text>
+            <explanation>Make sure that all mapped output blocks and fields are listed for compress method.</explanation>
+        </message>
+    </messages>
+    <docs/>
+    <files>
+        <file name="Linux/app_aggr.so" os="Linux" path="./" />
+    </files>
+    <storages>
+        <storage name="REJ_INVALID">
+            <description>Rejected records with wrong input field values, as defined in the mapping rules.</description>
+        </storage>	
+    </storages>
+    <links>
+        <link>OUTPUT</link>
+        <link>CSCFOUTPUT</link>  
+    </links>
+    <auditkeys>
+    </auditkeys>
+</configuration>

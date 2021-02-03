@@ -1,0 +1,785 @@
+2021-01-23 11:20:00.331536 base/nodebase.c:1054 < NB > Turning diagnostic to 90,90,90 for the next file, as instructed by Node Manager
+2021-01-23 11:20:00.331552 base/nodebase.c:2015 < NB > Status message, state 6, message <null>
+2021-01-23 11:20:00.331581 base/nodebase.c:2072 < NB > ...new state is:1611393600 PROCESS 
+2021-01-23 11:20:00.331586 base/nodebase.c:2080 < NB > ...state successfully written
+
+2021-01-23 11:20:00.331621 base/nodebase.c:2088 < NB > ...statefile successfully closed
+2021-01-23 11:20:00.331627 base/process.c:463 < NB > Process_record()
+2021-01-23 11:20:00.331629 base/process.c:473 < NB > Record reading loop...
+2021-01-23 11:20:00.331644 base/datarecords.cc:61 < NB > read record from file 1
+2021-01-23 11:20:00.331662 base/process.c:498 < NB > Record found
+2021-01-23 11:20:00.331666 base/process.c:539 < NB > ...normal record, going to application processing
+2021-01-23 11:20:00.331675 base/nodebase.c:163 < NB > Event message 4 : File ims_ccv_1:CDF_0000000067_1611392924224_2021-01-23_09:08:44.224.dat 1611393600x001_0013867: Starting processing VALID: /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1
+2021-01-23 11:20:00.331681 base/nodebase.c:233 < NB > ...message number 0, limit is 500
+2021-01-23 11:20:00.331684 base/file_interface.c:1235 < NB > Writing a data to file 0, 217 bytes
+2021-01-23 11:20:00.331687 base/process.c:251 < NB > Process_application_record()
+2021-01-23 11:20:00.331690 base/audit.c:661 < NB > audit_in(1) called
+2021-01-23 11:20:00.331692 base/process.c:266 < NB > Calling application_process()
+2021-01-23 11:20:00.331698 app_aggr.c:450 < APP > node_process(): entered the function
+2021-01-23 11:20:00.331705 app_aggr.c:1246 < APP > Dumping record from input interface...
+2021-01-23 11:20:00.331711 app_aggr.c:1257 < APP > F '.Header-Version': '1'
+2021-01-23 11:20:00.331714 app_aggr.c:1257 < APP > F '.Header-Command-Code': '271'
+2021-01-23 11:20:00.331716 app_aggr.c:1257 < APP > F '.Header-Application-ID': '3'
+2021-01-23 11:20:00.331719 app_aggr.c:1257 < APP > F '.Header-Hop-by-Hop-Identifier': '137232095'
+2021-01-23 11:20:00.331721 app_aggr.c:1257 < APP > F '.Header-End-to-End-Identifier': '1344373562'
+2021-01-23 11:20:00.331724 app_aggr.c:1257 < APP > F '.Header-Error': 'false'
+2021-01-23 11:20:00.331726 app_aggr.c:1257 < APP > F '.Header-Request': 'true'
+2021-01-23 11:20:00.331729 app_aggr.c:1257 < APP > F '.Header-Proxiable': 'true'
+2021-01-23 11:20:00.331732 app_aggr.c:1257 < APP > F '.Header-Retransmit': 'false'
+2021-01-23 11:20:00.331734 app_aggr.c:1257 < APP > F '.Header-System-Timestamp': '20210123090843'
+2021-01-23 11:20:00.331737 app_aggr.c:1257 < APP > F '.Header-Client-Id': 'peer_1610108601244_1'
+2021-01-23 11:20:00.331739 app_aggr.c:1257 < APP > F '.Header-Remote-IP-Address': '10.179.154.120'
+2021-01-23 11:20:00.331742 app_aggr.c:1257 < APP > F '.Header-Remote-Port': '44897'
+2021-01-23 11:20:00.331744 app_aggr.c:1257 < APP > F '.Header-Local-IP-Address': '10.201.1.202'
+2021-01-23 11:20:00.331747 app_aggr.c:1257 < APP > F '.Header-Local-Port': '3868'
+2021-01-23 11:20:00.331750 app_aggr.c:1257 < APP > F '.Session-Id': 'dtdrf01.tascac01.ims.mnc001.mcc615.3gppnetwork.org;3800773088;53;beid:GISU-0.tas01.local;16464;1843;53;0;1;4050-0E3E-00'
+2021-01-23 11:20:00.331753 app_aggr.c:1257 < APP > F '.Origin-Host': 'dtdrf01.tascac01.ims.mnc001.mcc615.3gppnetwork.org'
+2021-01-23 11:20:00.331756 app_aggr.c:1257 < APP > F '.Origin-Realm': 'ims.mnc001.mcc615.3gppnetwork.org'
+2021-01-23 11:20:00.331758 app_aggr.c:1257 < APP > F '.Destination-Realm': 'ims.mnc001.mcc615.3gppnetwork.org'
+2021-01-23 11:20:00.331761 app_aggr.c:1257 < APP > F '.Accounting-Record-Type': '2'
+2021-01-23 11:20:00.331763 app_aggr.c:1257 < APP > F '.Accounting-Record-Number': '0'
+2021-01-23 11:20:00.331766 app_aggr.c:1257 < APP > F '.Acct-Application-Id': '3'
+2021-01-23 11:20:00.331769 app_aggr.c:1257 < APP > F '.User-Name': '+22822256249@togotelecom.tg'
+2021-01-23 11:20:00.331771 app_aggr.c:1257 < APP > F '.Destination-Host': 'ccvims1.togocel.tg'
+2021-01-23 11:20:00.331774 app_aggr.c:1257 < APP > F '.Acct-Interim-Interval': '0'
+2021-01-23 11:20:00.331780 app_aggr.c:1257 < APP > F '.Origin-State-Id': '1591784285'
+2021-01-23 11:20:00.331783 app_aggr.c:1257 < APP > F '.Event-Timestamp': '3820383711'
+2021-01-23 11:20:00.331793 app_aggr.c:1257 < APP > F '.Service-Context-Id': '001.615.13.32260@3gpp.org'
+2021-01-23 11:20:00.331797 app_aggr.c:1254 < APP > B '.Service-Information.'
+2021-01-23 11:20:00.331799 app_aggr.c:1254 < APP > B '.Service-Information.Subscription-Id.'
+2021-01-23 11:20:00.331802 app_aggr.c:1257 < APP > F '.Service-Information.Subscription-Id.Subscription-Id-Type': '2'
+2021-01-23 11:20:00.331805 app_aggr.c:1257 < APP > F '.Service-Information.Subscription-Id.Subscription-Id-Data': 'sip:+22822256249@togotelecom.tg'
+2021-01-23 11:20:00.331808 app_aggr.c:1254 < APP > B '.Service-Information.IMS-Information.'
+2021-01-23 11:20:00.331811 app_aggr.c:1254 < APP > B '.Service-Information.IMS-Information.Event-Type.'
+2021-01-23 11:20:00.331814 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.Event-Type.SIP-Method': 'INVITE'
+2021-01-23 11:20:00.331817 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.Role-Of-Node': '0'
+2021-01-23 11:20:00.331819 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.Node-Functionality': '6'
+2021-01-23 11:20:00.331823 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.User-Session-Id': 'LU-1611394879236243-602@imsgrp-001.sbclom01.ims.mnc001.mcc615.3gppnetwork.org'
+2021-01-23 11:20:00.331825 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.Outgoing-Session-Id': '05C73A105A0342B1B2070DC3@5040ffffffff'
+2021-01-23 11:20:00.331828 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.Calling-Party-Address': 'tel:+22822256249'
+2021-01-23 11:20:00.331831 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.Calling-Party-Address': 'sip:+22822256249@togotelecom.tg'
+2021-01-23 11:20:00.331834 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.From-Address': '<sip:+22822256249@ims.mnc001.mcc615.3gppnetwork.org>;tag=5f1ada3c-600bef3fe14d788-mw-po-lucentPCSF-001204'
+2021-01-23 11:20:00.331837 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.Called-Party-Address': 'sip:+22893181978@togotelecom.tg'
+2021-01-23 11:20:00.331840 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.Requested-Party-Address': 'sip:93181978@togotelecom.tg'
+2021-01-23 11:20:00.331843 app_aggr.c:1254 < APP > B '.Service-Information.IMS-Information.Time-Stamps.'
+2021-01-23 11:20:00.331846 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.Time-Stamps.SIP-Request-Timestamp': '3820383679'
+2021-01-23 11:20:00.331848 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.Time-Stamps.SIP-Request-Timestamp-Fraction': '250'
+2021-01-23 11:20:00.331851 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.Time-Stamps.SIP-Response-Timestamp': '3820383711'
+2021-01-23 11:20:00.331854 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.Time-Stamps.SIP-Response-Timestamp-Fraction': '750'
+2021-01-23 11:20:00.331857 app_aggr.c:1254 < APP > B '.Service-Information.IMS-Information.Inter-Operator-Identifier.'
+2021-01-23 11:20:00.331860 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.Inter-Operator-Identifier.Terminating-IOI': 'msslom01.mnc001.mcc615.3gppnetwork.org'
+2021-01-23 11:20:00.331863 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.IMS-Charging-Identifier': '"PCSF:1-sbclom01cfed-0-1-00000000600bef3f-0000000000004a69"'
+2021-01-23 11:20:00.331866 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.SDP-Session-Description': 's=-'
+2021-01-23 11:20:00.331869 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.SDP-Session-Description': 'c=IN IP4 10.201.2.148'
+2021-01-23 11:20:00.331871 app_aggr.c:1254 < APP > B '.Service-Information.IMS-Information.SDP-Media-Component.'
+2021-01-23 11:20:00.331874 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.SDP-Media-Component.SDP-Media-Name': 'm=audio 17968 RTP/AVP 100 96'
+2021-01-23 11:20:00.331880 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.SDP-Media-Component.SDP-Media-Description': 'a=rtpmap:100 AMR/8000'
+2021-01-23 11:20:00.331883 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.SDP-Media-Component.SDP-Media-Description': 'a=fmtp:100 mode-set=7; max-red=0'
+2021-01-23 11:20:00.331886 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.SDP-Media-Component.SDP-Media-Description': 'a=rtpmap:96 telephone-event/8000'
+2021-01-23 11:20:00.331888 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.SDP-Media-Component.SDP-Media-Description': 'b=AS:29'
+2021-01-23 11:20:00.331891 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.SDP-Media-Component.Media-Initiator-Flag': '1'
+2021-01-23 11:20:00.331894 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.SDP-Media-Component.SDP-Type': '1'
+2021-01-23 11:20:00.331897 app_aggr.c:1257 < APP > F '.Service-Information.IMS-Information.IMS-Visited-Network-Identifier': 'sbclom01.ims.mnc001.mcc615.3gppnetwork.org'
+2021-01-23 11:20:00.331900 app_aggr.c:1254 < APP > B '.Service-Information.MMTel-Information.'
+2021-01-23 11:20:00.331903 app_aggr.c:1254 < APP > B '.Service-Information.MMTel-Information.Supplementary-Service.'
+2021-01-23 11:20:00.331905 app_aggr.c:1257 < APP > F '.Service-Information.MMTel-Information.Supplementary-Service.MMTel-SService-Type': '2'
+2021-01-23 11:20:00.331908 app_aggr.c:1265 < APP > Dumping record from input interface finished...
+2021-01-23 11:20:00.331912 app_aggr.c:1370 < APP > check_utilization(): entered the function ...
+2021-01-23 11:20:00.331956 sql_interface.cc:602 < LIB > Statement executed.
+2021-01-23 11:20:00.331959 sql_interface.cc:621 < LIB > Fetching a row...
+2021-01-23 11:20:00.331965 sql_interface.cc:664 < LIB > Get value from search
+2021-01-23 11:20:00.331973 sql_interface.cc:438 < LIB > Statement returns 2 values.
+2021-01-23 11:20:00.331975 sql_interface.cc:680 < LIB > sql_get_value: handle 0 value no 0.
+2021-01-23 11:20:00.331979 sql_interface.cc:694 < LIB > Getting parameter from column type -5.
+2021-01-23 11:20:00.331987 sql_interface.cc:756 < LIB > sql_get_value: returning value: '102400'
+2021-01-23 11:20:00.331991 sql_interface.cc:664 < LIB > Get value from search
+2021-01-23 11:20:00.331994 sql_interface.cc:438 < LIB > Statement returns 2 values.
+2021-01-23 11:20:00.331997 sql_interface.cc:680 < LIB > sql_get_value: handle 0 value no 1.
+2021-01-23 11:20:00.331999 sql_interface.cc:694 < LIB > Getting parameter from column type -5.
+2021-01-23 11:20:00.332002 sql_interface.cc:756 < LIB > sql_get_value: returning value: '9517'
+2021-01-23 11:20:00.332006 sql_interface.cc:200 < LIB > Close handle.
+2021-01-23 11:20:00.332013 app_aggr.c:1410 < APP > check_utilization(): returning '1' ...
+2021-01-23 11:20:00.332020 app_aggr.c:1136 < APP > Loaded SessionId: dtdrf01.tascac01.ims.mnc001.mcc615.3gppnetwork.org;3800773088;53;beid:GISU-0.tas01.local;16464;1843;53;0;1;4050-0E3E-00
+2021-01-23 11:20:00.332024 app_aggr.c:468 < APP > node_process(): session_id = 'dtdrf01.tascac01.ims.mnc001.mcc615.3gppnetwork.org;3800773088;53;beid:GISU-0.tas01.local;16464;1843;53;0;1;4050-0E3E-00' udr type = '2'
+2021-01-23 11:20:00.332027 app_aggr.c:1568 < APP > get_number_of_records_from_trs(): tmp_session_key 'dtdrf01.tascac01.ims.mnc001.mcc615.3gppnetwork.org;3800773088;53;beid:GISU-0.tas01.local;16464;1843;53;0;1;4050-0E3E-00', tmp_cdr_type: '6'
+2021-01-23 11:20:00.332031 sql_interface.cc:402 < LIB > Prepared statement has 2 parameter(s).
+2021-01-23 11:20:00.332034 sql_interface.cc:513 < LIB > Setting parameter of type 12.
+2021-01-23 11:20:00.332039 sql_interface.cc:402 < LIB > Prepared statement has 2 parameter(s).
+2021-01-23 11:20:00.332041 sql_interface.cc:513 < LIB > Setting parameter of type 12.
+2021-01-23 11:20:00.332063 sql_interface.cc:602 < LIB > Statement executed.
+2021-01-23 11:20:00.332066 sql_interface.cc:621 < LIB > Fetching a row...
+2021-01-23 11:20:00.332069 sql_interface.cc:664 < LIB > Get value from search
+2021-01-23 11:20:00.332071 sql_interface.cc:438 < LIB > Statement returns 1 values.
+2021-01-23 11:20:00.332077 sql_interface.cc:680 < LIB > sql_get_value: handle 2 value no 0.
+2021-01-23 11:20:00.332079 sql_interface.cc:694 < LIB > Getting parameter from column type 4.
+2021-01-23 11:20:00.332082 sql_interface.cc:756 < LIB > sql_get_value: returning value: '0'
+2021-01-23 11:20:00.332085 sql_interface.cc:200 < LIB > Close handle.
+2021-01-23 11:20:00.332089 app_aggr.c:1586 < APP > get_number_of_records_from_trs(): number of records was 0
+2021-01-23 11:20:00.332109 app_aggr.c:531 < APP > node_process(): No records were found from TRS or input record is out of sequence, storing input record as single record
+2021-01-23 11:20:00.332113 app_aggr.c:746 < APP > handleNewCDR(): Handling new CDR for session 'dtdrf01.tascac01.ims.mnc001.mcc615.3gppnetwork.org;3800773088;53;beid:GISU-0.tas01.local;16464;1843;53;0;1;4050-0E3E-00'
+2021-01-23 11:20:00.332116 app_aggr.c:750 < APP > handleNewCDR():  START partial udr_type '2'
+2021-01-23 11:20:00.332119 base/nb_interface.c:61 < NB > nb_new_record() called
+2021-01-23 11:20:00.332123 app_aggr.c:1972 < APP > write_ASN1_record(): RECORD START
+2021-01-23 11:20:00.332135 field_mapping.c:1333 < APP > ENTER_BLOCK_DIAG(): B dialled-Party-Address
+2021-01-23 11:20:00.332139 field_mapping.c:1337 < APP > ADD_NEW_FIELD_DIAG(): F sIP-URI sip:93181978@togotelecom.tg
+2021-01-23 11:20:00.332141 field_mapping.c:1339 < APP > END_BLOCK_DIAG(): . and moving . 
+2021-01-23 11:20:00.332145 field_mapping.c:149 < APP > ADD_FIELD_DIAG(): F record-Type 69
+2021-01-23 11:20:00.332148 field_mapping.c:161 < APP > ADD_FIELD_DIAG(): F retransmission 
+2021-01-23 11:20:00.332152 field_mapping.c:106 < APP > ENTER_BLOCK_DIAG(): B .node-Address
+2021-01-23 11:20:00.332155 field_mapping.c:107 < APP > ADD_FIELD_DIAG(): F domainName dtdrf01.tascac01.ims.mnc001.mcc615.3gppnetwork.org
+2021-01-23 11:20:00.332158 field_mapping.c:108 < APP > END_BLOCK_DIAG(): . and moving . 
+2021-01-23 11:20:00.332162 field_mapping.c:90 < APP > ADD_FIELD_DIAG(): F .session-ID LU-1611394879236243-602@imsgrp-001.sbclom01.ims.mnc001.mcc615.3gppnetwork.org
+2021-01-23 11:20:00.332168 field_mapping.c:2309 < APP > addFieldRemoveDulicate(): .list-Of-Calling-Party-Address, tEL-URI, tel:+22822256249
+2021-01-23 11:20:00.332171 field_mapping.c:2313 < APP > ENTER_BLOCK_DIAG(): B .list-Of-Calling-Party-Address
+2021-01-23 11:20:00.332174 field_mapping.c:2328 < APP > END_BLOCK_DIAG(): . and moving . 
+2021-01-23 11:20:00.332177 field_mapping.c:2309 < APP > addFieldRemoveDulicate(): .list-Of-Calling-Party-Address, sIP-URI, sip:+22822256249@togotelecom.tg
+2021-01-23 11:20:00.332180 field_mapping.c:2313 < APP > ENTER_BLOCK_DIAG(): B .list-Of-Calling-Party-Address
+2021-01-23 11:20:00.332183 field_mapping.c:2328 < APP > END_BLOCK_DIAG(): . and moving . 
+2021-01-23 11:20:00.332187 field_mapping.c:1333 < APP > ENTER_BLOCK_DIAG(): B called-Party-Address
+2021-01-23 11:20:00.332190 field_mapping.c:1337 < APP > ADD_NEW_FIELD_DIAG(): F sIP-URI sip:+22893181978@togotelecom.tg
+2021-01-23 11:20:00.332192 field_mapping.c:1339 < APP > END_BLOCK_DIAG(): . and moving . 
+2021-01-23 11:20:00.332196 field_mapping.c:1655 < APP > TIME_CONVERT input is 3820383679
+2021-01-23 11:20:00.332201 field_mapping.c:1681 < APP > TIME_CONVERT output is 2101231141192b0200
+2021-01-23 11:20:00.332205 field_mapping.c:141 < APP > ADD_FIELD_DIAG(): F .service-Request-Time-Stamp 2101231141192b0200
+2021-01-23 11:20:00.332218 field_mapping.c:1869 < APP > ADD_BA_FIELD_DIAG(): F iMS-Charging-Identifier 22504353463A312D7362636C6F6D3031636665642D302D312D303030303030303036303062656633662D3030303030303030303030303461363922 ["PCSF:1-sbclom01cfed-0-1-00000000600bef3f-0000000000004a69"]
+2021-01-23 11:20:00.332223 field_mapping.c:90 < APP > ADD_FIELD_DIAG(): F .serviceRequestTimeStampFraction 250
+2021-01-23 11:20:00.332228 field_mapping.c:1655 < APP > TIME_CONVERT input is 3820383711
+2021-01-23 11:20:00.332232 field_mapping.c:1681 < APP > TIME_CONVERT output is 2101231141512b0200
+2021-01-23 11:20:00.332235 field_mapping.c:504 < APP > ADD_FIELD_DIAG(): F timestamp 2101231141512b0200
+2021-01-23 11:20:00.332241 field_mapping.c:509 < APP > ADD_FIELD_DIAG(): F timestamps 1
+2021-01-23 11:20:00.332245 field_mapping.c:1451 < APP > ADD_FIELD_DIAG(): F privateUserID +22822256249@togotelecom.tg
+2021-01-23 11:20:00.332248 field_mapping.c:523 < APP > map_interOperatorIdentifiers(0)
+2021-01-23 11:20:00.332253 field_mapping.c:546 < APP > I_Originating_IOI = 
+2021-01-23 11:20:00.332255 field_mapping.c:547 < APP > I_Terminating_IOI = msslom01.mnc001.mcc615.3gppnetwork.org
+2021-01-23 11:20:00.332258 field_mapping.c:551 < APP > ENTER_BLOCK_DIAG(): B inter-Operator-Identifiers
+2021-01-23 11:20:00.332261 field_mapping.c:552 < APP > ADD_BLOCK_DIAG(): B Inter-Operator-Identifiers
+2021-01-23 11:20:00.332264 field_mapping.c:554 < APP > ADD_FIELD_DIAG(): F terminating-IOI msslom01.mnc001.mcc615.3gppnetwork.org
+2021-01-23 11:20:00.332266 field_mapping.c:555 < APP > EXIT_BLOCK_DIAG(): .
+2021-01-23 11:20:00.332268 field_mapping.c:556 < APP > EXIT_BLOCK_DIAG(): .
+2021-01-23 11:20:00.332271 field_mapping.c:523 < APP > map_interOperatorIdentifiers(1)
+2021-01-23 11:20:00.332275 field_mapping.c:2218 < APP > removeDuplicatesFromOut(): .inter-Operator-Identifiers, Inter-Operator-Identifiers
+2021-01-23 11:20:00.332277 field_mapping.c:2235 < APP > removeDuplicatesFromOut(): blockCount = 1
+2021-01-23 11:20:00.332284 field_mapping.c:90 < APP > ADD_FIELD_DIAG(): F .role-of-Node 0
+2021-01-23 11:20:00.332287 field_mapping.c:1655 < APP > TIME_CONVERT input is 3820383711
+2021-01-23 11:20:00.332291 field_mapping.c:1681 < APP > TIME_CONVERT output is 2101231141512b0200
+2021-01-23 11:20:00.332294 field_mapping.c:141 < APP > ADD_FIELD_DIAG(): F .service-Delivery-Start-Time-Stamp 2101231141512b0200
+2021-01-23 11:20:00.332298 field_mapping.c:90 < APP > ADD_FIELD_DIAG(): F .serviceDeliveryStartTimeStampFraction 750
+2021-01-23 11:20:00.332302 field_mapping.c:1655 < APP > TIME_CONVERT input is 3820383711
+2021-01-23 11:20:00.332305 field_mapping.c:1681 < APP > TIME_CONVERT output is 2101231141512b0200
+2021-01-23 11:20:00.332307 field_mapping.c:340 < APP > map_recordOpeningTime(): SIP-Response-Timestamp chosen for record-Opening-Time '2101231141512b0200'
+2021-01-23 11:20:00.332311 field_mapping.c:349 < APP > ADD_FIELD_DIAG(): F record-Opening-Time 2101231141512b0200
+2021-01-23 11:20:00.332315 field_mapping.c:375 < APP > map_recordOpeningTime(): SIP-Response-Timestamp chosen for record-Opening-Time-Fraction '750'
+2021-01-23 11:20:00.332318 field_mapping.c:393 < APP > ADD_FIELD_DIAG(): F record-Opening-Time-Fraction 750
+2021-01-23 11:20:00.332321 field_mapping.c:1655 < APP > TIME_CONVERT input is 3820383679
+2021-01-23 11:20:00.332324 field_mapping.c:1681 < APP > TIME_CONVERT output is 2101231141192b0200
+2021-01-23 11:20:00.332327 field_mapping.c:1655 < APP > TIME_CONVERT input is 3820383711
+2021-01-23 11:20:00.332330 field_mapping.c:1681 < APP > TIME_CONVERT output is 2101231141512b0200
+2021-01-23 11:20:00.332334 field_mapping.c:921 < APP > ENTER_BLOCK_DIAG(): B list-Of-SDP-Media-Components
+2021-01-23 11:20:00.332337 field_mapping.c:922 < APP > ADD_BLOCK_DIAG(): B List-of-Media-Components
+2021-01-23 11:20:00.332340 field_mapping.c:923 < APP > ADD_FIELD_DIAG(): F sIP-Request-Time-Stamp 2101231141192b0200
+2021-01-23 11:20:00.332343 field_mapping.c:924 < APP > ADD_FIELD_DIAG(): F sIP-Response-Time-Stamp 2101231141512b0200
+2021-01-23 11:20:00.332346 field_mapping.c:927 < APP > ADD_BLOCK_DIAG(): B sDP-Session-Description
+2021-01-23 11:20:00.332349 field_mapping.c:929 < APP > ADD_NEW_FIELD_DIAG(): F GraphicString s=-
+2021-01-23 11:20:00.332352 field_mapping.c:929 < APP > ADD_NEW_FIELD_DIAG(): F GraphicString c=IN IP4 10.201.2.148
+2021-01-23 11:20:00.332355 field_mapping.c:931 < APP > EXIT_BLOCK_DIAG(): .
+2021-01-23 11:20:00.332357 field_mapping.c:934 < APP > ADD_FIELD_DIAG(): F sIP-Request-Timestamp-Fraction 250
+2021-01-23 11:20:00.332360 field_mapping.c:935 < APP > ADD_FIELD_DIAG(): F sIP-Response-Timestamp-Fraction 750
+2021-01-23 11:20:00.332363 field_mapping.c:940 < APP > ADD_BLOCK_DIAG(): B sDP-Media-Components
+2021-01-23 11:20:00.332366 field_mapping.c:945 < APP > ADD_BLOCK_DIAG(): B SDP-Media-Component
+2021-01-23 11:20:00.332373 field_mapping.c:946 < APP > ADD_FIELD_DIAG(): F sDP-Media-Name m=audio 17968 RTP/AVP 100 96
+2021-01-23 11:20:00.332376 field_mapping.c:948 < APP > ADD_BLOCK_DIAG(): B sDP-Media-Descriptions
+2021-01-23 11:20:00.332379 field_mapping.c:950 < APP > ADD_NEW_FIELD_DIAG(): F GraphicString a=rtpmap:100 AMR/8000
+2021-01-23 11:20:00.332382 field_mapping.c:950 < APP > ADD_NEW_FIELD_DIAG(): F GraphicString a=fmtp:100 mode-set=7; max-red=0
+2021-01-23 11:20:00.332385 field_mapping.c:950 < APP > ADD_NEW_FIELD_DIAG(): F GraphicString a=rtpmap:96 telephone-event/8000
+2021-01-23 11:20:00.332388 field_mapping.c:950 < APP > ADD_NEW_FIELD_DIAG(): F GraphicString b=AS:29
+2021-01-23 11:20:00.332390 field_mapping.c:952 < APP > EXIT_BLOCK_DIAG(): .
+2021-01-23 11:20:00.332393 field_mapping.c:960 < APP > EXIT_BLOCK_DIAG(): .
+2021-01-23 11:20:00.332395 field_mapping.c:966 < APP > EXIT_BLOCK_DIAG(): .
+2021-01-23 11:20:00.332398 field_mapping.c:975 < APP > ADD_FIELD_DIAG(): F sDP-Type 1
+2021-01-23 11:20:00.332401 field_mapping.c:977 < APP > END_BLOCK_DIAG(): . and moving . 
+2021-01-23 11:20:00.332403 field_mapping.c:2218 < APP > removeDuplicatesFromOut(): .list-Of-SDP-Media-Components, List-of-Media-Components
+2021-01-23 11:20:00.332406 field_mapping.c:2235 < APP > removeDuplicatesFromOut(): blockCount = 1
+2021-01-23 11:20:00.332516 field_mapping.c:90 < APP > ADD_FIELD_DIAG(): F .ims-Visited-Network-Identifier sbclom01.ims.mnc001.mcc615.3gppnetwork.org
+2021-01-23 11:20:00.332520 field_mapping.c:1333 < APP > ENTER_BLOCK_DIAG(): B requested-Party-Address
+2021-01-23 11:20:00.332523 field_mapping.c:1337 < APP > ADD_NEW_FIELD_DIAG(): F sIP-URI sip:93181978@togotelecom.tg
+2021-01-23 11:20:00.332526 field_mapping.c:1339 < APP > END_BLOCK_DIAG(): . and moving . 
+2021-01-23 11:20:00.332534 field_mapping.c:1252 < APP > ENTER_BLOCK_DIAG(): B list-of-subscription-ID
+2021-01-23 11:20:00.332537 field_mapping.c:1254 < APP > ADD_BLOCK_DIAG(): B SubscriptionID
+2021-01-23 11:20:00.332540 field_mapping.c:1255 < APP > ADD_NEW_FIELD_DIAG(): F subscriptionIDType 2
+2021-01-23 11:20:00.332544 field_mapping.c:1256 < APP > ADD_NEW_FIELD_DIAG(): F subscriptionIDData sip:+22822256249@togotelecom.tg
+2021-01-23 11:20:00.332546 field_mapping.c:1257 < APP > EXIT_BLOCK_DIAG(): .
+2021-01-23 11:20:00.332548 field_mapping.c:1259 < APP > END_BLOCK_DIAG(): . and moving . 
+2021-01-23 11:20:00.332553 app_aggr.c:1984 < APP > write_ASN1_record(): returning...
+2021-01-23 11:20:00.332556 app_aggr.c:1051 < APP > handleRecordSequenceNumber(): single=0, last=0
+2021-01-23 11:20:00.332558 app_aggr.c:1075 < APP > handleRecordSequenceNumber(): adding sequence number 1
+2021-01-23 11:20:00.332561 app_aggr.c:1076 < APP > ADD_FIELD_DIAG(): F record-Sequence-Number 1
+2021-01-23 11:20:00.332566 app_aggr.c:1213 < APP > Dumping record from output interface entered...
+2021-01-23 11:20:00.332568 app_aggr.c:1218 < APP > Dumping record from output interface...
+2021-01-23 11:20:00.332571 app_aggr.c:1226 < APP > B '.dialled-Party-Address.'
+2021-01-23 11:20:00.332574 app_aggr.c:1228 < APP > F '.dialled-Party-Address.sIP-URI': 'sip:93181978@togotelecom.tg'
+2021-01-23 11:20:00.332576 app_aggr.c:1228 < APP > F '.record-Type': '69'
+2021-01-23 11:20:00.332579 app_aggr.c:1228 < APP > F '.retransmission': ''
+2021-01-23 11:20:00.332582 app_aggr.c:1226 < APP > B '.node-Address.'
+2021-01-23 11:20:00.332585 app_aggr.c:1228 < APP > F '.node-Address.domainName': 'dtdrf01.tascac01.ims.mnc001.mcc615.3gppnetwork.org'
+2021-01-23 11:20:00.332588 app_aggr.c:1228 < APP > F '.session-ID': 'LU-1611394879236243-602@imsgrp-001.sbclom01.ims.mnc001.mcc615.3gppnetwork.org'
+2021-01-23 11:20:00.332590 app_aggr.c:1226 < APP > B '.list-Of-Calling-Party-Address.'
+2021-01-23 11:20:00.332593 app_aggr.c:1228 < APP > F '.list-Of-Calling-Party-Address.tEL-URI': 'tel:+22822256249'
+2021-01-23 11:20:00.332596 app_aggr.c:1228 < APP > F '.list-Of-Calling-Party-Address.sIP-URI': 'sip:+22822256249@togotelecom.tg'
+2021-01-23 11:20:00.332598 app_aggr.c:1226 < APP > B '.called-Party-Address.'
+2021-01-23 11:20:00.332604 app_aggr.c:1228 < APP > F '.called-Party-Address.sIP-URI': 'sip:+22893181978@togotelecom.tg'
+2021-01-23 11:20:00.332606 app_aggr.c:1228 < APP > F '.service-Request-Time-Stamp': '2101231141192b0200'
+2021-01-23 11:20:00.332610 app_aggr.c:1228 < APP > F '.iMS-Charging-Identifier': '22504353463A312D7362636C6F6D3031636665642D302D312D303030303030303036303062656633662D3030303030303030303030303461363922'
+2021-01-23 11:20:00.332612 app_aggr.c:1228 < APP > F '.serviceRequestTimeStampFraction': '250'
+2021-01-23 11:20:00.332615 app_aggr.c:1228 < APP > F '.timestamp': '2101231141512b0200'
+2021-01-23 11:20:00.332618 app_aggr.c:1228 < APP > F '.timestamps': '1'
+2021-01-23 11:20:00.332620 app_aggr.c:1228 < APP > F '.privateUserID': '+22822256249@togotelecom.tg'
+2021-01-23 11:20:00.332623 app_aggr.c:1226 < APP > B '.inter-Operator-Identifiers.'
+2021-01-23 11:20:00.332625 app_aggr.c:1226 < APP > B '.inter-Operator-Identifiers.Inter-Operator-Identifiers.'
+2021-01-23 11:20:00.332628 app_aggr.c:1228 < APP > F '.inter-Operator-Identifiers.Inter-Operator-Identifiers.terminating-IOI': 'msslom01.mnc001.mcc615.3gppnetwork.org'
+2021-01-23 11:20:00.332631 app_aggr.c:1228 < APP > F '.role-of-Node': '0'
+2021-01-23 11:20:00.332634 app_aggr.c:1228 < APP > F '.service-Delivery-Start-Time-Stamp': '2101231141512b0200'
+2021-01-23 11:20:00.332637 app_aggr.c:1228 < APP > F '.serviceDeliveryStartTimeStampFraction': '750'
+2021-01-23 11:20:00.332639 app_aggr.c:1228 < APP > F '.record-Opening-Time': '2101231141512b0200'
+2021-01-23 11:20:00.332642 app_aggr.c:1228 < APP > F '.record-Opening-Time-Fraction': '750'
+2021-01-23 11:20:00.332644 app_aggr.c:1226 < APP > B '.list-Of-SDP-Media-Components.'
+2021-01-23 11:20:00.332647 app_aggr.c:1226 < APP > B '.list-Of-SDP-Media-Components.List-of-Media-Components.'
+2021-01-23 11:20:00.332650 app_aggr.c:1228 < APP > F '.list-Of-SDP-Media-Components.List-of-Media-Components.sIP-Request-Time-Stamp': '2101231141192b0200'
+2021-01-23 11:20:00.332653 app_aggr.c:1228 < APP > F '.list-Of-SDP-Media-Components.List-of-Media-Components.sIP-Response-Time-Stamp': '2101231141512b0200'
+2021-01-23 11:20:00.332656 app_aggr.c:1226 < APP > B '.list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Session-Description.'
+2021-01-23 11:20:00.332658 app_aggr.c:1228 < APP > F '.list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Session-Description.GraphicString': 's=-'
+2021-01-23 11:20:00.332661 app_aggr.c:1228 < APP > F '.list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Session-Description.GraphicString': 'c=IN IP4 10.201.2.148'
+2021-01-23 11:20:00.332664 app_aggr.c:1228 < APP > F '.list-Of-SDP-Media-Components.List-of-Media-Components.sIP-Request-Timestamp-Fraction': '250'
+2021-01-23 11:20:00.332667 app_aggr.c:1228 < APP > F '.list-Of-SDP-Media-Components.List-of-Media-Components.sIP-Response-Timestamp-Fraction': '750'
+2021-01-23 11:20:00.332670 app_aggr.c:1226 < APP > B '.list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Media-Components.'
+2021-01-23 11:20:00.332673 app_aggr.c:1226 < APP > B '.list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Media-Components.SDP-Media-Component.'
+2021-01-23 11:20:00.332676 app_aggr.c:1228 < APP > F '.list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Media-Components.SDP-Media-Component.sDP-Media-Name': 'm=audio 17968 RTP/AVP 100 96'
+2021-01-23 11:20:00.332679 app_aggr.c:1226 < APP > B '.list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Media-Components.SDP-Media-Component.sDP-Media-Descriptions.'
+2021-01-23 11:20:00.332682 app_aggr.c:1228 < APP > F '.list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Media-Components.SDP-Media-Component.sDP-Media-Descriptions.GraphicString': 'a=rtpmap:100 AMR/8000'
+2021-01-23 11:20:00.332685 app_aggr.c:1228 < APP > F '.list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Media-Components.SDP-Media-Component.sDP-Media-Descriptions.GraphicString': 'a=fmtp:100 mode-set=7; max-red=0'
+2021-01-23 11:20:00.332688 app_aggr.c:1228 < APP > F '.list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Media-Components.SDP-Media-Component.sDP-Media-Descriptions.GraphicString': 'a=rtpmap:96 telephone-event/8000'
+2021-01-23 11:20:00.332694 app_aggr.c:1228 < APP > F '.list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Media-Components.SDP-Media-Component.sDP-Media-Descriptions.GraphicString': 'b=AS:29'
+2021-01-23 11:20:00.332697 app_aggr.c:1228 < APP > F '.list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Type': '1'
+2021-01-23 11:20:00.332700 app_aggr.c:1228 < APP > F '.ims-Visited-Network-Identifier': 'sbclom01.ims.mnc001.mcc615.3gppnetwork.org'
+2021-01-23 11:20:00.332702 app_aggr.c:1226 < APP > B '.requested-Party-Address.'
+2021-01-23 11:20:00.332705 app_aggr.c:1228 < APP > F '.requested-Party-Address.sIP-URI': 'sip:93181978@togotelecom.tg'
+2021-01-23 11:20:00.332708 app_aggr.c:1226 < APP > B '.list-of-subscription-ID.'
+2021-01-23 11:20:00.332710 app_aggr.c:1226 < APP > B '.list-of-subscription-ID.SubscriptionID.'
+2021-01-23 11:20:00.332713 app_aggr.c:1228 < APP > F '.list-of-subscription-ID.SubscriptionID.subscriptionIDType': '2'
+2021-01-23 11:20:00.332716 app_aggr.c:1228 < APP > F '.list-of-subscription-ID.SubscriptionID.subscriptionIDData': 'sip:+22822256249@togotelecom.tg'
+2021-01-23 11:20:00.332719 app_aggr.c:1228 < APP > F '.record-Sequence-Number': '1'
+2021-01-23 11:20:00.332721 app_aggr.c:1235 < APP > Dumping record from output interface finished...
+2021-01-23 11:20:00.332724 app_aggr.c:1152 < APP > do_compress(): entering...
+2021-01-23 11:20:00.332729 app_aggr.c:1166 < APP > block: .dialled-Party-Address., index: 83
+2021-01-23 11:20:00.332734 app_aggr.c:1182 < APP > field: .dialled-Party-Address.sIP-URI, index: 85, value: sip:93181978@togotelecom.tg
+2021-01-23 11:20:00.332738 app_aggr.c:1182 < APP > field: .record-Type, index: 23, value: 69
+2021-01-23 11:20:00.332741 app_aggr.c:1182 < APP > field: .retransmission, index: 24, value: 
+2021-01-23 11:20:00.332745 app_aggr.c:1166 < APP > block: .node-Address., index: 18
+2021-01-23 11:20:00.332748 app_aggr.c:1182 < APP > field: .node-Address.domainName, index: 19, value: dtdrf01.tascac01.ims.mnc001.mcc615.3gppnetwork.org
+2021-01-23 11:20:00.332753 app_aggr.c:1182 < APP > field: .session-ID, index: 28, value: LU-1611394879236243-602@imsgrp-001.sbclom01.ims.mnc001.mcc615.3gppnetwork.org
+2021-01-23 11:20:00.332757 app_aggr.c:1166 < APP > block: .list-Of-Calling-Party-Address., index: 4
+2021-01-23 11:20:00.332762 app_aggr.c:1182 < APP > field: .list-Of-Calling-Party-Address.tEL-URI, index: 55, value: tel:+22822256249
+2021-01-23 11:20:00.332767 app_aggr.c:1182 < APP > field: .list-Of-Calling-Party-Address.sIP-URI, index: 5, value: sip:+22822256249@togotelecom.tg
+2021-01-23 11:20:00.332771 app_aggr.c:1166 < APP > block: .called-Party-Address., index: 1
+2021-01-23 11:20:00.332775 app_aggr.c:1182 < APP > field: .called-Party-Address.sIP-URI, index: 2, value: sip:+22893181978@togotelecom.tg
+2021-01-23 11:20:00.332781 app_aggr.c:1182 < APP > field: .service-Request-Time-Stamp, index: 27, value: 2101231141192b0200
+2021-01-23 11:20:00.332791 app_aggr.c:1182 < APP > field: .iMS-Charging-Identifier, index: 3, value: 22504353463A312D7362636C6F6D3031636665642D302D312D303030303030303036303062656633662D3030303030303030303030303461363922
+2021-01-23 11:20:00.332799 app_aggr.c:1182 < APP > field: .serviceRequestTimeStampFraction, index: 78, value: 250
+2021-01-23 11:20:00.332806 app_aggr.c:1182 < APP > field: .timestamp, index: 29, value: 2101231141512b0200
+2021-01-23 11:20:00.332812 app_aggr.c:1182 < APP > field: .timestamps, index: 30, value: 1
+2021-01-23 11:20:00.332822 app_aggr.c:1182 < APP > field: .privateUserID, index: 105, value: +22822256249@togotelecom.tg
+2021-01-23 11:20:00.332829 app_aggr.c:1166 < APP > block: .inter-Operator-Identifiers., index: 50
+2021-01-23 11:20:00.332834 app_aggr.c:1166 < APP > block: .inter-Operator-Identifiers.Inter-Operator-Identifiers., index: 51
+2021-01-23 11:20:00.332841 app_aggr.c:1182 < APP > field: .inter-Operator-Identifiers.Inter-Operator-Identifiers.terminating-IOI, index: 53, value: msslom01.mnc001.mcc615.3gppnetwork.org
+2021-01-23 11:20:00.332852 app_aggr.c:1182 < APP > field: .role-of-Node, index: 25, value: 0
+2021-01-23 11:20:00.332860 app_aggr.c:1182 < APP > field: .service-Delivery-Start-Time-Stamp, index: 26, value: 2101231141512b0200
+2021-01-23 11:20:00.332868 app_aggr.c:1182 < APP > field: .serviceDeliveryStartTimeStampFraction, index: 79, value: 750
+2021-01-23 11:20:00.332876 app_aggr.c:1182 < APP > field: .record-Opening-Time, index: 22, value: 2101231141512b0200
+2021-01-23 11:20:00.332884 app_aggr.c:1182 < APP > field: .record-Opening-Time-Fraction, index: 117, value: 750
+2021-01-23 11:20:00.332892 app_aggr.c:1166 < APP > block: .list-Of-SDP-Media-Components., index: 6
+2021-01-23 11:20:00.332897 app_aggr.c:1166 < APP > block: .list-Of-SDP-Media-Components.List-of-Media-Components., index: 7
+2021-01-23 11:20:00.332903 app_aggr.c:1182 < APP > field: .list-Of-SDP-Media-Components.List-of-Media-Components.sIP-Request-Time-Stamp, index: 16, value: 2101231141192b0200
+2021-01-23 11:20:00.332911 app_aggr.c:1182 < APP > field: .list-Of-SDP-Media-Components.List-of-Media-Components.sIP-Response-Time-Stamp, index: 17, value: 2101231141512b0200
+2021-01-23 11:20:00.332920 app_aggr.c:1166 < APP > block: .list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Session-Description., index: 13
+2021-01-23 11:20:00.332926 app_aggr.c:1182 < APP > field: .list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Session-Description.GraphicString, index: 14, value: s=-
+2021-01-23 11:20:00.332934 app_aggr.c:1182 < APP > field: .list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Session-Description.GraphicString, index: 14, value: c=IN IP4 10.201.2.148
+2021-01-23 11:20:00.332944 app_aggr.c:1182 < APP > field: .list-Of-SDP-Media-Components.List-of-Media-Components.sIP-Request-Timestamp-Fraction, index: 81, value: 250
+2021-01-23 11:20:00.332954 app_aggr.c:1182 < APP > field: .list-Of-SDP-Media-Components.List-of-Media-Components.sIP-Response-Timestamp-Fraction, index: 82, value: 750
+2021-01-23 11:20:00.332962 app_aggr.c:1166 < APP > block: .list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Media-Components., index: 8
+2021-01-23 11:20:00.332968 app_aggr.c:1166 < APP > block: .list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Media-Components.SDP-Media-Component., index: 9
+2021-01-23 11:20:00.332975 app_aggr.c:1182 < APP > field: .list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Media-Components.SDP-Media-Component.sDP-Media-Name, index: 12, value: m=audio 17968 RTP/AVP 100 96
+2021-01-23 11:20:00.332984 app_aggr.c:1166 < APP > block: .list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Media-Components.SDP-Media-Component.sDP-Media-Descriptions., index: 10
+2021-01-23 11:20:00.332990 app_aggr.c:1182 < APP > field: .list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Media-Components.SDP-Media-Component.sDP-Media-Descriptions.GraphicString, index: 11, value: a=rtpmap:100 AMR/8000
+2021-01-23 11:20:00.333000 app_aggr.c:1182 < APP > field: .list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Media-Components.SDP-Media-Component.sDP-Media-Descriptions.GraphicString, index: 11, value: a=fmtp:100 mode-set=7; max-red=0
+2021-01-23 11:20:00.333009 app_aggr.c:1182 < APP > field: .list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Media-Components.SDP-Media-Component.sDP-Media-Descriptions.GraphicString, index: 11, value: a=rtpmap:96 telephone-event/8000
+2021-01-23 11:20:00.333019 app_aggr.c:1182 < APP > field: .list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Media-Components.SDP-Media-Component.sDP-Media-Descriptions.GraphicString, index: 11, value: b=AS:29
+2021-01-23 11:20:00.333029 app_aggr.c:1182 < APP > field: .list-Of-SDP-Media-Components.List-of-Media-Components.sDP-Type, index: 15, value: 1
+2021-01-23 11:20:00.333039 app_aggr.c:1182 < APP > field: .ims-Visited-Network-Identifier, index: 49, value: sbclom01.ims.mnc001.mcc615.3gppnetwork.org
+2021-01-23 11:20:00.333049 app_aggr.c:1166 < APP > block: .requested-Party-Address., index: 59
+2021-01-23 11:20:00.333057 app_aggr.c:1182 < APP > field: .requested-Party-Address.sIP-URI, index: 61, value: sip:93181978@togotelecom.tg
+2021-01-23 11:20:00.333070 app_aggr.c:1166 < APP > block: .list-of-subscription-ID., index: 86
+2021-01-23 11:20:00.333078 app_aggr.c:1166 < APP > block: .list-of-subscription-ID.SubscriptionID., index: 87
+2021-01-23 11:20:00.333085 app_aggr.c:1182 < APP > field: .list-of-subscription-ID.SubscriptionID.subscriptionIDType, index: 88, value: 2
+2021-01-23 11:20:00.333096 app_aggr.c:1182 < APP > field: .list-of-subscription-ID.SubscriptionID.subscriptionIDData, index: 89, value: sip:+22822256249@togotelecom.tg
+2021-01-23 11:20:00.333107 app_aggr.c:1182 < APP > field: .record-Sequence-Number, index: 58, value: 1
+2021-01-23 11:20:00.333121 app_aggr.c:1204 < APP > Output record converted: 83
+85 sip:93181978@togotelecom.tg
+23 69
+24 
+18
+19 dtdrf01.tascac01.ims.mnc001.mcc615.3gppnetwork.org
+28 LU-1611394879236243-602@imsgrp-001.sbclom01.ims.mnc001.mcc615.3gppnetwork.org
+4
+55 tel:+22822256249
+5 sip:+22822256249@togotelecom.tg
+1
+2 sip:+22893181978@togotelecom.tg
+27 2101231141192b0200
+3 22504353463A312D7362636C6F6D3031636665642D302D312D303030303030303036303062656633662D3030303030303030303030303461363922
+78 250
+29 2101231141512b0200
+30 1
+105 +22822256249@togotelecom.tg
+50
+51
+53 msslom01.mnc001.mcc615.3gppnetwork.org
+25 0
+26 2101231141512b0200
+79 750
+22 2101231141512b0200
+117 750
+6
+7
+16 2101231141192b0200
+17 2101231141512b0200
+13
+14 s=-
+14 c=IN IP4 10.201.2.148
+81 250
+82 750
+8
+9
+12 m=audio 17968 RTP/AVP 100 96
+10
+11 a=rtpmap:100 AMR/8000
+11 a=fmtp:100 mode-set=7; max-red=0
+11 a=rtpmap:96 telephone-event/8000
+11 b=AS:29
+15 1
+49 sbclom01.ims.mnc001.mcc615.3gppnetwork.org
+59
+61 sip:93181978@togotelecom.tg
+86
+87
+88 2
+89 sip:+22822256249@togotelecom.tg
+58 1
+2021-01-23 11:20:00.333123 app_aggr.c:1205 < APP > do_compress(): returning...
+2021-01-23 11:20:00.333130 app_aggr.c:1424 < APP > insert_into_TRS(): tmp_session_id 'dtdrf01.tascac01.ims.mnc001.mcc615.3gppnetwork.org;3800773088;53;beid:GISU-0.tas01.local;16464;1843;53;0;1;4050-0E3E-00', tmp_cdr_type '6', timeoutAt '1611394200'
+2021-01-23 11:20:00.333137 app_aggr.c:1559 < APP > insert_into_TRS(): Record: rec_num '0', buffered_acr_num '1', start_lost '0', record '83
+85 sip:93181978@togotelecom.tg
+23 69
+24 
+18
+19 dtdrf01.tascac01.ims.mnc001.mcc615.3gppnetwork.org
+28 LU-1611394879236243-602@imsgrp-001.sbclom01.ims.mnc001.mcc615.3gppnetwork.org
+4
+55 tel:+22822256249
+5 sip:+22822256249@togotelecom.tg
+1
+2 sip:+22893181978@togotelecom.tg
+27 2101231141192b0200
+3 22504353463A312D7362636C6F6D3031636665642D302D312D303030303030303036303062656633662D3030303030303030303030303461363922
+78 250
+29 2101231141512b0200
+30 1
+105 +22822256249@togotelecom.tg
+50
+51
+53 msslom01.mnc001.mcc615.3gppnetwork.org
+25 0
+26 2101231141512b0200
+79 750
+22 2101231141512b0200
+117 750
+6
+7
+16 2101231141192b0200
+17 2101231141512b0200
+13
+14 s=-
+14 c=IN IP4 10.201.2.148
+81 250
+82 750
+8
+9
+12 m=audio 17968 RTP/AVP 100 96
+10
+11 a=rtpmap:100 AMR/8000
+11 a=fmtp:100 mode-set=7; max-red=0
+11 a=rtpmap:96 telephone-event/8000
+11 b=AS:29
+15 1
+49 sbclom01.ims.mnc001.mcc615.3gppnetwork.org
+59
+61 sip:93181978@togotelecom.tg
+86
+87
+88 2
+89 sip:+22822256249@togotelecom.tg
+58 1'
+2021-01-23 11:20:00.333140 sql_interface.cc:402 < LIB > Prepared statement has 8 parameter(s).
+2021-01-23 11:20:00.333145 sql_interface.cc:513 < LIB > Setting parameter of type 12.
+2021-01-23 11:20:00.333148 sql_interface.cc:402 < LIB > Prepared statement has 8 parameter(s).
+2021-01-23 11:20:00.333151 sql_interface.cc:513 < LIB > Setting parameter of type 12.
+2021-01-23 11:20:00.333157 sql_interface.cc:402 < LIB > Prepared statement has 8 parameter(s).
+2021-01-23 11:20:00.333160 sql_interface.cc:513 < LIB > Setting parameter of type 4.
+2021-01-23 11:20:00.333169 sql_interface.cc:402 < LIB > Prepared statement has 8 parameter(s).
+2021-01-23 11:20:00.333171 sql_interface.cc:513 < LIB > Setting parameter of type 4.
+2021-01-23 11:20:00.333174 sql_interface.cc:402 < LIB > Prepared statement has 8 parameter(s).
+2021-01-23 11:20:00.333176 sql_interface.cc:513 < LIB > Setting parameter of type 12.
+2021-01-23 11:20:00.333181 sql_interface.cc:402 < LIB > Prepared statement has 8 parameter(s).
+2021-01-23 11:20:00.333184 sql_interface.cc:513 < LIB > Setting parameter of type 12.
+2021-01-23 11:20:00.333186 sql_interface.cc:402 < LIB > Prepared statement has 8 parameter(s).
+2021-01-23 11:20:00.333189 sql_interface.cc:513 < LIB > Setting parameter of type -5.
+2021-01-23 11:20:00.333192 sql_interface.cc:402 < LIB > Prepared statement has 8 parameter(s).
+2021-01-23 11:20:00.333194 sql_interface.cc:513 < LIB > Setting parameter of type 4.
+2021-01-23 11:20:00.333283 sql_interface.cc:602 < LIB > Statement executed.
+2021-01-23 11:20:00.333287 sql_interface.cc:200 < LIB > Close handle.
+2021-01-23 11:20:00.333293 app_aggr.c:1473 < APP > update_timeout_TRS():tmp_session_id 'dtdrf01.tascac01.ims.mnc001.mcc615.3gppnetwork.org;3800773088;53;beid:GISU-0.tas01.local;16464;1843;53;0;1;4050-0E3E-00', tmp_cdr_type '6', timeout_at '1611394200'
+2021-01-23 11:20:00.333296 sql_interface.cc:402 < LIB > Prepared statement has 3 parameter(s).
+2021-01-23 11:20:00.333299 sql_interface.cc:513 < LIB > Setting parameter of type -5.
+2021-01-23 11:20:00.333302 sql_interface.cc:402 < LIB > Prepared statement has 3 parameter(s).
+2021-01-23 11:20:00.333305 sql_interface.cc:513 < LIB > Setting parameter of type 12.
+2021-01-23 11:20:00.333308 sql_interface.cc:402 < LIB > Prepared statement has 3 parameter(s).
+2021-01-23 11:20:00.333310 sql_interface.cc:513 < LIB > Setting parameter of type 12.
+2021-01-23 11:20:00.333342 sql_interface.cc:602 < LIB > Statement executed.
+2021-01-23 11:20:00.333345 sql_interface.cc:200 < LIB > Close handle.
+2021-01-23 11:20:00.333348 app_aggr.c:630 < APP > node_process(): returning...
+2021-01-23 11:20:00.333350 base/process.c:268 < NB > ...returned from application_process()
+2021-01-23 11:20:00.333353 base/process.c:273 < NB > ...record was not audited yet - audit it as filtered
+2021-01-23 11:20:00.333356 base/audit.c:1388 < NB > audit_filter_record() called
+2021-01-23 11:20:00.333359 base/audit.c:1452 < NB > audit_update() called
+2021-01-23 11:20:00.333361 base/audit.c:1460 < NB > ...input record exists
+2021-01-23 11:20:00.333368 base/audit.c:1539 < NB > Audit update: new audit counter 1611393600x001_0013867,VALID,DIAMETER_IFACE,,DIAMETER_IFACE,
+2021-01-23 11:20:00.333372 base/audit.c:1544 < NB > ...in 1, out 0, filt 1, rej 0, repr 0, cre 0, dupl 0, stor 0, retr 0, redu 0
+2021-01-23 11:20:00.333376 base/audit.c:110 < NB > audit_reset() called
+2021-01-23 11:20:00.333379 base/process.c:1098 < NB > Process_maintenance()
+2021-01-23 11:20:00.333382 base/process.c:1115 < NB > time_now: 1611393600, last_maintenance:1611393600
+2021-01-23 11:20:00.333384 base/process.c:1253 < NB > Process_handle_requests()
+2021-01-23 11:20:00.333387 base/process.c:1309 < NB > ...return from Process_handle_request(), returning OK
+2021-01-23 11:20:00.333390 base/process.c:1242 < NB > ...return from Process_maintenance(), returning OK
+2021-01-23 11:20:00.333392 base/process.c:473 < NB > Record reading loop...
+2021-01-23 11:20:00.333395 base/datarecords.cc:61 < NB > read record from file 1
+2021-01-23 11:20:00.333397 base/process.c:597 < NB > EOF - end of input file
+2021-01-23 11:20:00.333400 base/process.c:720 < NB > Process_end_of_file()
+2021-01-23 11:20:00.333402 base/process.c:721 < NB > End of input file
+2021-01-23 11:20:00.333405 base/nb_file_buffer.c:916 < NB > Checking sequence number of the input file /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1
+2021-01-23 11:20:00.333411 base/nb_file_buffer.c:936 < NB > ...not a split file
+2021-01-23 11:20:00.333414 base/process.c:774 < NB > Process_commit
+2021-01-23 11:20:00.333417 base/process.c:778 < NB > Calling application_commit()
+2021-01-23 11:20:00.333419 app_aggr.c:900 < APP > node_commit()
+2021-01-23 11:20:00.333422 trs_interface.cc:406 < LIB > Commit work.
+2021-01-23 11:20:00.333425 base/commit.c:842 < NB > Pre commit started...
+2021-01-23 11:20:00.333427 base/audit.c:1592 < NB > Writing out AUDIT counters...
+2021-01-23 11:20:00.333430 base/file_interface.c:1235 < NB > Writing a data to file 0, 21 bytes
+2021-01-23 11:20:00.333438 base/file_interface.c:1235 < NB > Writing a data to file 0, 104 bytes
+2021-01-23 11:20:00.333441 base/nb_alloc.c:19 < NB > Allocate 16 bytes, base/audit.c:2165
+2021-01-23 11:20:00.333446 base/nb_alloc.c:19 < NB > Allocate 24 bytes, base/nb_list.c:140
+2021-01-23 11:20:00.333449 base/nb_alloc.c:19 < NB > Allocate 3 bytes, base/nb_alloc.c:68
+2021-01-23 11:20:00.333452 base/nb_alloc.c:19 < NB > Allocate 16 bytes, base/audit.c:2165
+2021-01-23 11:20:00.333455 base/nb_alloc.c:19 < NB > Allocate 24 bytes, base/nb_list.c:140
+2021-01-23 11:20:00.333458 base/nb_alloc.c:19 < NB > Allocate 9 bytes, base/nb_alloc.c:68
+2021-01-23 11:20:00.333464 base/nodebase.c:163 < NB > Event message 4 : File ims_ccv_1:CDF_0000000067_1611392924224_2021-01-23_09:08:44.224.dat 1611393600x001_0013867: Read 1 records: DIAMETER_IFACE/DIAMETER_IFACE 1
+2021-01-23 11:20:00.333468 base/nodebase.c:233 < NB > ...message number 0, limit is 500
+2021-01-23 11:20:00.333471 base/file_interface.c:1235 < NB > Writing a data to file 0, 168 bytes
+2021-01-23 11:20:00.333476 base/nodebase.c:163 < NB > Event message 4 : File ims_ccv_1:CDF_0000000067_1611392924224_2021-01-23_09:08:44.224.dat 1611393600x001_0013867: Filtered 1 records: DIAMETER_IFACE/DIAMETER_IFACE 1
+2021-01-23 11:20:00.333479 base/nodebase.c:233 < NB > ...message number 0, limit is 500
+2021-01-23 11:20:00.333482 base/file_interface.c:1235 < NB > Writing a data to file 0, 172 bytes
+2021-01-23 11:20:00.333485 base/storage.cc:204 < NB > nb_store_pop('#AU_LINE') called
+2021-01-23 11:20:00.333488 base/storage.cc:210 < NB > ...not found
+2021-01-23 11:20:00.333493 base/nodebase.c:163 < NB > Event message 4 : File ims_ccv_1:CDF_0000000067_1611392924224_2021-01-23_09:08:44.224.dat 1611393600x001_0013867: Read 2865 bytes
+2021-01-23 11:20:00.333497 base/nodebase.c:233 < NB > ...message number 0, limit is 500
+2021-01-23 11:20:00.333499 base/file_interface.c:1235 < NB > Writing a data to file 0, 136 bytes
+2021-01-23 11:20:00.333504 base/commit.c:449 < NB > Add commit order processed: PROCESSED 0 '/buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock'
+2021-01-23 11:20:00.333507 base/storage.cc:109 < NB > nb_store_add('#','PROCESSED 0 '/buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock'') called
+2021-01-23 11:20:00.333511 base/commit.c:922 < NB > Checking output link OUTPUT...
+2021-01-23 11:20:00.333513 base/commit.c:991 < NB > ...link is in file mode
+2021-01-23 11:20:00.333516 base/storage.cc:204 < NB > nb_store_pop('#OUTPUT_records') called
+2021-01-23 11:20:00.333519 base/storage.cc:210 < NB > ...not found
+2021-01-23 11:20:00.333522 base/storage.cc:204 < NB > nb_store_pop('#OUTPUT_basename') called
+2021-01-23 11:20:00.333524 base/storage.cc:210 < NB > ...not found
+2021-01-23 11:20:00.333527 base/commit.c:922 < NB > Checking output link #REJ_INVALID...
+2021-01-23 11:20:00.333529 base/commit.c:991 < NB > ...link is in file mode
+2021-01-23 11:20:00.333532 base/storage.cc:204 < NB > nb_store_pop('##REJ_INVALID_records') called
+2021-01-23 11:20:00.333534 base/storage.cc:210 < NB > ...not found
+2021-01-23 11:20:00.333537 base/storage.cc:204 < NB > nb_store_pop('##REJ_INVALID_basename') called
+2021-01-23 11:20:00.333539 base/storage.cc:210 < NB > ...not found
+2021-01-23 11:20:00.333542 base/commit.c:922 < NB > Checking output link #REJ_DUPLICATE...
+2021-01-23 11:20:00.333544 base/commit.c:991 < NB > ...link is in file mode
+2021-01-23 11:20:00.333547 base/storage.cc:204 < NB > nb_store_pop('##REJ_DUPLICATE_records') called
+2021-01-23 11:20:00.333550 base/storage.cc:210 < NB > ...not found
+2021-01-23 11:20:00.333552 base/storage.cc:204 < NB > nb_store_pop('##REJ_DUPLICATE_basename') called
+2021-01-23 11:20:00.333555 base/storage.cc:210 < NB > ...not found
+2021-01-23 11:20:00.333560 base/commit.c:460 < NB > Add commit order change status: CHANGE_STATUS C '/buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock'
+2021-01-23 11:20:00.333563 base/storage.cc:109 < NB > nb_store_add('#','CHANGE_STATUS C '/buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock'') called
+2021-01-23 11:20:00.333569 base/nb_file_buffer.c:1682 < NB > Updating node 1 status 'W' to the lock file
+2021-01-23 11:20:00.333578 base/nb_file_buffer.c:1499 < NB > Checking node status from the lockfile...
+2021-01-23 11:20:00.333580 base/nb_file_buffer.c:1503 < NB > ...master node
+2021-01-23 11:20:00.333583 base/commit.c:45 < NB > Start: 1611393600.331
+2021-01-23 11:20:00.333586 base/commit.c:46 < NB > End: 1611393600.333
+2021-01-23 11:20:00.333593 base/nodebase.c:163 < NB > Event message 4 : File ims_ccv_1:CDF_0000000067_1611392924224_2021-01-23_09:08:44.224.dat 1611393600x001_0013867: I/O stats: read 2865 (1 requests), wrote 32 (1 requests)
+2021-01-23 11:20:00.333597 base/nodebase.c:233 < NB > ...message number 0, limit is 500
+2021-01-23 11:20:00.333599 base/file_interface.c:1235 < NB > Writing a data to file 0, 177 bytes
+2021-01-23 11:20:00.333606 base/nodebase.c:163 < NB > Event message 4 : File ims_ccv_1:CDF_0000000067_1611392924224_2021-01-23_09:08:44.224.dat 1611393600x001_0013867: I/O throughput: read 0.98 MB/s, wrote 0.00 MB/s
+2021-01-23 11:20:00.333609 base/nodebase.c:233 < NB > ...message number 0, limit is 500
+2021-01-23 11:20:00.333612 base/file_interface.c:1235 < NB > Writing a data to file 0, 168 bytes
+2021-01-23 11:20:00.333618 base/nodebase.c:163 < NB > Event message 4 : File ims_ccv_1:CDF_0000000067_1611392924224_2021-01-23_09:08:44.224.dat 1611393600x001_0013867: Performance: real 0.0020s (500 ER/s), CPU 0.0021s (472 ER/s)
+2021-01-23 11:20:00.333622 base/nodebase.c:233 < NB > ...message number 0, limit is 500
+2021-01-23 11:20:00.333624 base/file_interface.c:1235 < NB > Writing a data to file 0, 181 bytes
+2021-01-23 11:20:00.333626 base/audit.c:1754 < NB > Finalizing audit file...
+2021-01-23 11:20:00.333629 base/nb_file_buffer.c:450 < NB > Flushing buffer to disk, pos:1356, contents:1356, filepos:1356
+2021-01-23 11:20:00.333632 base/nb_file_buffer.c:465 < NB > ...writing from 0 to 1356
+2021-01-23 11:20:00.333634 base/nb_util.c:604 < NB > Checking free space for file descriptor 12
+2021-01-23 11:20:00.333640 base/nb_util.c:617 < NB > ...blocksize: 4096, free blocks: 51202707
+2021-01-23 11:20:00.333643 base/nb_file_buffer.c:434 < NB > Disk space left for file /control/321/3861/audit/1/audit_1611393600x1_3861-1s1_writing: 200010MB
+2021-01-23 11:20:00.333653 base/commit.c:362 < NB > Add commit order addstr: AUDIT '/control/321/3861/audit/1/audit_1611393600x1_3861-1s1_writing' '-----'
+2021-01-23 11:20:00.333656 base/storage.cc:109 < NB > nb_store_add('#','AUDIT '/control/321/3861/audit/1/audit_1611393600x1_3861-1s1_writing' '-----'') called
+2021-01-23 11:20:00.333659 base/audit.c:1770 < NB > ...audit flushed
+2021-01-23 11:20:00.333662 base/commit.c:1202 < NB > Adding remove orders for input files...
+2021-01-23 11:20:00.333665 base/nb_file_buffer.c:916 < NB > Checking sequence number of the input file /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1
+2021-01-23 11:20:00.333669 base/nb_file_buffer.c:936 < NB > ...not a split file
+2021-01-23 11:20:00.333671 base/commit.c:1229 < NB > ...internal
+2021-01-23 11:20:00.333675 base/commit.c:403 < NB > Add commit order remove:REMOVE /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1
+2021-01-23 11:20:00.333678 base/storage.cc:109 < NB > nb_store_add('#','REMOVE /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1') called
+2021-01-23 11:20:00.333682 base/commit.c:403 < NB > Add commit order remove:REMOVE /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock
+2021-01-23 11:20:00.333685 base/storage.cc:109 < NB > nb_store_add('#','REMOVE /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock') called
+2021-01-23 11:20:00.333688 base/file_interface.c:767 < NB > Closing file in slot 1
+2021-01-23 11:20:00.333692 base/nb_file_buffer.c:631 < NB > Closing file /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1,   read+write
+2021-01-23 11:20:00.333694 base/nb_file_buffer.c:450 < NB > Flushing buffer to disk, pos:2865, contents:2865, filepos:2865
+2021-01-23 11:20:00.333699 base/nb_file_buffer.c:454 < NB > ...file is only for input, no flushing
+2021-01-23 11:20:00.333701 base/nb_file_buffer.c:643 < NB > start mummap...is_rec: 1
+2021-01-23 11:20:00.333713 base/commit.c:393 < NB > Add commit order rename:RENAME 'storage.2_writing' 'storage.2'
+2021-01-23 11:20:00.333716 base/storage.cc:109 < NB > nb_store_add('#','RENAME 'storage.2_writing' 'storage.2'') called
+2021-01-23 11:20:00.333720 base/file_interface.c:274 < NB > Opening file 'storage.2_writing', flags:2, tag:STORAGE
+2021-01-23 11:20:00.333722 base/file_interface.c:300 < NB > ...file slot is 1
+2021-01-23 11:20:00.333725 base/file_interface.c:219 < NB > Get the buffer size for a file to be opened
+2021-01-23 11:20:00.333727 base/file_interface.c:304 < NB > .. size is 65536
+2021-01-23 11:20:00.333730 base/nb_alloc.c:19 < NB > Allocate 65537 bytes, base/nb_file_buffer.c:71
+2021-01-23 11:20:00.333759 base/nb_file_buffer.c:831 < NB > Opening non-record file /storage/internal/nodes/321/3861/storage/1//storage.2_writing, write
+2021-01-23 11:20:00.333800 base/nb_file_buffer.c:835 < NB > Open returned 11, errno 2
+2021-01-23 11:20:00.333803 base/file_interface.c:335 < NB > ...file open successful
+2021-01-23 11:20:00.333806 base/storage.cc:251 < NB > Saving storage #=PROCESSED 0 '/buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock'
+2021-01-23 11:20:00.333809 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333811 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333814 base/file_interface.c:1235 < NB > Writing a data to file 1, 88 bytes
+2021-01-23 11:20:00.333816 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333819 base/storage.cc:251 < NB > Saving storage #=CHANGE_STATUS C '/buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock'
+2021-01-23 11:20:00.333822 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333824 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333827 base/file_interface.c:1235 < NB > Writing a data to file 1, 92 bytes
+2021-01-23 11:20:00.333829 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333832 base/storage.cc:251 < NB > Saving storage #=AUDIT '/control/321/3861/audit/1/audit_1611393600x1_3861-1s1_writing' '-----'
+2021-01-23 11:20:00.333834 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333837 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333839 base/file_interface.c:1235 < NB > Writing a data to file 1, 77 bytes
+2021-01-23 11:20:00.333841 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333844 base/storage.cc:251 < NB > Saving storage #=REMOVE /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1
+2021-01-23 11:20:00.333847 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333849 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333851 base/file_interface.c:1235 < NB > Writing a data to file 1, 76 bytes
+2021-01-23 11:20:00.333854 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333857 base/storage.cc:251 < NB > Saving storage #=REMOVE /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock
+2021-01-23 11:20:00.333859 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333861 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333864 base/file_interface.c:1235 < NB > Writing a data to file 1, 81 bytes
+2021-01-23 11:20:00.333866 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333869 base/storage.cc:251 < NB > Saving storage #=RENAME 'storage.2_writing' 'storage.2'
+2021-01-23 11:20:00.333871 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333876 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333879 base/file_interface.c:1235 < NB > Writing a data to file 1, 38 bytes
+2021-01-23 11:20:00.333881 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333884 base/storage.cc:251 < NB > Saving storage localRecordSequenceNumber=144
+2021-01-23 11:20:00.333886 base/file_interface.c:1235 < NB > Writing a data to file 1, 25 bytes
+2021-01-23 11:20:00.333889 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333891 base/file_interface.c:1235 < NB > Writing a data to file 1, 3 bytes
+2021-01-23 11:20:00.333894 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.333896 base/file_interface.c:767 < NB > Closing file in slot 1
+2021-01-23 11:20:00.333899 base/nb_file_buffer.c:631 < NB > Closing file /storage/internal/nodes/321/3861/storage/1//storage.2_writing, write
+2021-01-23 11:20:00.333902 base/nb_file_buffer.c:450 < NB > Flushing buffer to disk, pos:500, contents:500, filepos:500
+2021-01-23 11:20:00.333904 base/nb_file_buffer.c:465 < NB > ...writing from 0 to 500
+2021-01-23 11:20:00.333907 base/nb_util.c:604 < NB > Checking free space for file descriptor 11
+2021-01-23 11:20:00.333911 base/nb_util.c:617 < NB > ...blocksize: 4096, free blocks: 59634750
+2021-01-23 11:20:00.333914 base/nb_file_buffer.c:434 < NB > Disk space left for file /storage/internal/nodes/321/3861/storage/1//storage.2_writing: 232948MB
+2021-01-23 11:20:00.333921 base/nb_file_buffer.c:643 < NB > start mummap...is_rec: 0
+2021-01-23 11:20:00.333939 trs_interface.cc:419 < LIB > Got node base sequence number 2.
+2021-01-23 11:20:00.333943 trs_interface.cc:459 < LIB > Update commit sequence number to 2 for node id '3861' node number '1'.
+2021-01-23 11:20:00.333947 sql_interface.cc:235 < LIB > Executing statement: 'update el_commit_sequence set sequence_no=2 where nodeid='3861.1''
+2021-01-23 11:20:00.333976 trs_interface.cc:1669 < LIB > Execute updates.
+2021-01-23 11:20:00.333979 sql_interface.cc:111 < LIB > Commit work.
+2021-01-23 11:20:00.333997 sql_interface.cc:127 < LIB > Work committed.
+2021-01-23 11:20:00.334000 base/commit.c:1307 < NB > Post commit
+2021-01-23 11:20:00.334002 base/commit.c:1309 < NB > Commit sequence number is 2
+2021-01-23 11:20:00.334006 base/file_interface.c:1670 < NB > Checking if file storage.1 (fullname /storage/internal/nodes/321/3861/storage/1//storage.1) exists
+2021-01-23 11:20:00.334011 base/file_interface.c:1678 < NB > ...exists
+2021-01-23 11:20:00.334014 base/file_interface.c:1688 < NB > Removing file: 'storage.1'
+2021-01-23 11:20:00.334033 base/file_interface.c:1670 < NB > Checking if file storage.1_writing (fullname /storage/internal/nodes/321/3861/storage/1//storage.1_writing) exists
+2021-01-23 11:20:00.334038 base/file_interface.c:1674 < NB > ...does not exist
+2021-01-23 11:20:00.334041 base/commit.c:498 < NB > Executing commit orders...
+2021-01-23 11:20:00.334043 base/storage.cc:204 < NB > nb_store_pop('#') called
+2021-01-23 11:20:00.334047 base/storage.cc:218 < NB > ...found PROCESSED 0 '/buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock'
+2021-01-23 11:20:00.334050 base/commit.c:527 < NB > Processing commit order: PROCESSED 0 '/buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock'
+2021-01-23 11:20:00.334093 base/commit.c:767 < NB > ...already processed 0 records, lock file /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock
+2021-01-23 11:20:00.334096 base/nb_file_buffer.c:1291 < NB > Reading lock file /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock...
+2021-01-23 11:20:00.334104 base/nb_file_buffer.c:1682 < NB > Updating node 0 status 'C' to the lock file
+2021-01-23 11:20:00.334109 base/nb_file_buffer.c:1499 < NB > Checking node status from the lockfile...
+2021-01-23 11:20:00.334112 base/nb_file_buffer.c:1503 < NB > ...master node
+2021-01-23 11:20:00.334115 base/nb_file_buffer.c:1456 < NB > Updating processed records 0 to the lock file /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock
+2021-01-23 11:20:00.334122 base/storage.cc:204 < NB > nb_store_pop('#') called
+2021-01-23 11:20:00.334126 base/storage.cc:218 < NB > ...found CHANGE_STATUS C '/buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock'
+2021-01-23 11:20:00.334128 base/commit.c:527 < NB > Processing commit order: CHANGE_STATUS C '/buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock'
+2021-01-23 11:20:00.334167 base/commit.c:798 < NB > ..changing node status to C in lock file /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock
+2021-01-23 11:20:00.334170 base/nb_file_buffer.c:1291 < NB > Reading lock file /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock...
+2021-01-23 11:20:00.334175 base/nb_file_buffer.c:1682 < NB > Updating node 1 status 'C' to the lock file
+2021-01-23 11:20:00.334179 base/storage.cc:204 < NB > nb_store_pop('#') called
+2021-01-23 11:20:00.334182 base/storage.cc:218 < NB > ...found AUDIT '/control/321/3861/audit/1/audit_1611393600x1_3861-1s1_writing' '-----'
+2021-01-23 11:20:00.334185 base/commit.c:527 < NB > Processing commit order: AUDIT '/control/321/3861/audit/1/audit_1611393600x1_3861-1s1_writing' '-----'
+2021-01-23 11:20:00.334204 base/commit.c:608 < NB > Audit cmd: AUDIT '/control/321/3861/audit/1/audit_1611393600x1_3861-1s1_writing' '-----'
+2021-01-23 11:20:00.334206 base/storage.cc:204 < NB > nb_store_pop('#') called
+2021-01-23 11:20:00.334209 base/storage.cc:218 < NB > ...found REMOVE /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1
+2021-01-23 11:20:00.334212 base/commit.c:527 < NB > Processing commit order: REMOVE /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1
+2021-01-23 11:20:00.334236 base/commit.c:590 < NB > ...remove file /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1
+2021-01-23 11:20:00.334239 base/file_interface.c:1688 < NB > Removing file: '/buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1'
+2021-01-23 11:20:00.334252 base/storage.cc:204 < NB > nb_store_pop('#') called
+2021-01-23 11:20:00.334256 base/storage.cc:218 < NB > ...found REMOVE /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock
+2021-01-23 11:20:00.334258 base/commit.c:527 < NB > Processing commit order: REMOVE /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock
+2021-01-23 11:20:00.334271 base/commit.c:590 < NB > ...remove file /buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock
+2021-01-23 11:20:00.334274 base/file_interface.c:1688 < NB > Removing file: '/buffer/321/VALID_0_3866/1611393600x001_0013867_1611393600x001_3866_1.lock'
+2021-01-23 11:20:00.334285 base/storage.cc:204 < NB > nb_store_pop('#') called
+2021-01-23 11:20:00.334288 base/storage.cc:218 < NB > ...found RENAME 'storage.2_writing' 'storage.2'
+2021-01-23 11:20:00.334291 base/commit.c:527 < NB > Processing commit order: RENAME 'storage.2_writing' 'storage.2'
+2021-01-23 11:20:00.334305 base/commit.c:569 < NB > ...rename storage.2_writing to storage.2
+2021-01-23 11:20:00.334307 base/file_interface.c:1709 < NB > Rename file from 'storage.2_writing' to 'storage.2'
+2021-01-23 11:20:00.334319 base/storage.cc:204 < NB > nb_store_pop('#') called
+2021-01-23 11:20:00.334321 base/storage.cc:210 < NB > ...not found
+2021-01-23 11:20:00.334324 base/audit.c:1786 < NB > Closing audit file...
+2021-01-23 11:20:00.334326 base/audit.c:1804 < NB > Writing end marker to the audit file
+2021-01-23 11:20:00.334329 base/file_interface.c:1235 < NB > Writing a data to file 0, 6 bytes
+2021-01-23 11:20:00.334331 base/nb_file_buffer.c:450 < NB > Flushing buffer to disk, pos:6, contents:6, filepos:1362
+2021-01-23 11:20:00.334334 base/nb_file_buffer.c:465 < NB > ...writing from 0 to 6
+2021-01-23 11:20:00.334339 base/file_interface.c:103 < NB > Returning file position of the file 0
+2021-01-23 11:20:00.334342 base/audit.c:1866 < NB > Audit in Multi file mode (file 5 since check)
+2021-01-23 11:20:00.334347 base/audit.c:1883 < NB > Closing and renaming audit file /control/321/3861/audit/1/audit_1611393600x1_3861-1s1_writing
+2021-01-23 11:20:00.334349 base/file_interface.c:767 < NB > Closing file in slot 0
+2021-01-23 11:20:00.334352 base/nb_file_buffer.c:631 < NB > Closing file /control/321/3861/audit/1/audit_1611393600x1_3861-1s1_writing,   read+write
+2021-01-23 11:20:00.334355 base/nb_file_buffer.c:450 < NB > Flushing buffer to disk, pos:0, contents:0, filepos:1362
+2021-01-23 11:20:00.334357 base/nb_file_buffer.c:643 < NB > start mummap...is_rec: 0
+2021-01-23 11:20:00.334361 base/nb_file_buffer.c:877 < NB > Removing _3861-1s1_writing from file /control/321/3861/audit/1/audit_1611393600x1_3861-1s1_writing
+2021-01-23 11:20:00.334372 base/storage.cc:204 < NB > nb_store_pop('#AU_LINE') called
+2021-01-23 11:20:00.334376 base/storage.cc:210 < NB > ...not found
+2021-01-23 11:20:00.334378 base/audit.c:110 < NB > audit_reset() called
+2021-01-23 11:20:00.334381 base/datarecords.cc:368 < NB > o_reset_outout(OUTPUT) called
+2021-01-23 11:20:00.334384 base/datarecords.cc:368 < NB > o_reset_outout(#REJ_INVALID) called
+2021-01-23 11:20:00.334386 base/datarecords.cc:368 < NB > o_reset_outout(#REJ_DUPLICATE) called
+2021-01-23 11:20:00.334388 base/datarecords.cc:379 < NB > o_reset() called
+2021-01-23 11:20:00.334391 base/process.c:780 < NB > ...returned from application_commit()
+2021-01-23 11:20:00.334394 base/process.c:785 < NB > Application commit is not enabled -> running pre and post commits
+2021-01-23 11:20:00.334396 base/commit.c:842 < NB > Pre commit started...
+2021-01-23 11:20:00.334398 base/audit.c:1592 < NB > Writing out AUDIT counters...
+2021-01-23 11:20:00.334401 base/audit.c:1597 < NB > No audit counters to write
+2021-01-23 11:20:00.334403 base/commit.c:922 < NB > Checking output link OUTPUT...
+2021-01-23 11:20:00.334406 base/commit.c:991 < NB > ...link is in file mode
+2021-01-23 11:20:00.334408 base/storage.cc:204 < NB > nb_store_pop('#OUTPUT_records') called
+2021-01-23 11:20:00.334411 base/storage.cc:210 < NB > ...not found
+2021-01-23 11:20:00.334413 base/storage.cc:204 < NB > nb_store_pop('#OUTPUT_basename') called
+2021-01-23 11:20:00.334416 base/storage.cc:210 < NB > ...not found
+2021-01-23 11:20:00.334418 base/commit.c:922 < NB > Checking output link #REJ_INVALID...
+2021-01-23 11:20:00.334421 base/commit.c:991 < NB > ...link is in file mode
+2021-01-23 11:20:00.334423 base/storage.cc:204 < NB > nb_store_pop('##REJ_INVALID_records') called
+2021-01-23 11:20:00.334426 base/storage.cc:210 < NB > ...not found
+2021-01-23 11:20:00.334428 base/storage.cc:204 < NB > nb_store_pop('##REJ_INVALID_basename') called
+2021-01-23 11:20:00.334430 base/storage.cc:210 < NB > ...not found
+2021-01-23 11:20:00.334433 base/commit.c:922 < NB > Checking output link #REJ_DUPLICATE...
+2021-01-23 11:20:00.334435 base/commit.c:991 < NB > ...link is in file mode
+2021-01-23 11:20:00.334438 base/storage.cc:204 < NB > nb_store_pop('##REJ_DUPLICATE_records') called
+2021-01-23 11:20:00.334440 base/storage.cc:210 < NB > ...not found
+2021-01-23 11:20:00.334443 base/storage.cc:204 < NB > nb_store_pop('##REJ_DUPLICATE_basename') called
+2021-01-23 11:20:00.334445 base/storage.cc:210 < NB > ...not found
+2021-01-23 11:20:00.334448 base/audit.c:1754 < NB > Finalizing audit file...
+2021-01-23 11:20:00.334451 base/audit.c:1759 < NB > Audit file was not open
+2021-01-23 11:20:00.334453 base/commit.c:1202 < NB > Adding remove orders for input files...
+2021-01-23 11:20:00.334456 base/commit.c:393 < NB > Add commit order rename:RENAME 'storage.1_writing' 'storage.1'
+2021-01-23 11:20:00.334459 base/storage.cc:109 < NB > nb_store_add('#','RENAME 'storage.1_writing' 'storage.1'') called
+2021-01-23 11:20:00.334462 base/file_interface.c:274 < NB > Opening file 'storage.1_writing', flags:2, tag:STORAGE
+2021-01-23 11:20:00.334465 base/file_interface.c:300 < NB > ...file slot is 1
+2021-01-23 11:20:00.334467 base/file_interface.c:219 < NB > Get the buffer size for a file to be opened
+2021-01-23 11:20:00.334470 base/file_interface.c:304 < NB > .. size is 65536
+2021-01-23 11:20:00.334474 base/nb_alloc.c:19 < NB > Allocate 65537 bytes, base/nb_file_buffer.c:71
+2021-01-23 11:20:00.334482 base/nb_file_buffer.c:831 < NB > Opening non-record file /storage/internal/nodes/321/3861/storage/1//storage.1_writing, write
+2021-01-23 11:20:00.334506 base/nb_file_buffer.c:835 < NB > Open returned 6, errno 2
+2021-01-23 11:20:00.334509 base/file_interface.c:335 < NB > ...file open successful
+2021-01-23 11:20:00.334511 base/storage.cc:251 < NB > Saving storage #=RENAME 'storage.1_writing' 'storage.1'
+2021-01-23 11:20:00.334514 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.334516 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.334519 base/file_interface.c:1235 < NB > Writing a data to file 1, 38 bytes
+2021-01-23 11:20:00.334521 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.334524 base/storage.cc:251 < NB > Saving storage localRecordSequenceNumber=144
+2021-01-23 11:20:00.334526 base/file_interface.c:1235 < NB > Writing a data to file 1, 25 bytes
+2021-01-23 11:20:00.334528 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.334531 base/file_interface.c:1235 < NB > Writing a data to file 1, 3 bytes
+2021-01-23 11:20:00.334533 base/file_interface.c:1235 < NB > Writing a data to file 1, 1 bytes
+2021-01-23 11:20:00.334535 base/file_interface.c:767 < NB > Closing file in slot 1
+2021-01-23 11:20:00.334538 base/nb_file_buffer.c:631 < NB > Closing file /storage/internal/nodes/321/3861/storage/1//storage.1_writing, write
+2021-01-23 11:20:00.334541 base/nb_file_buffer.c:450 < NB > Flushing buffer to disk, pos:71, contents:71, filepos:71
+2021-01-23 11:20:00.334543 base/nb_file_buffer.c:465 < NB > ...writing from 0 to 71
+2021-01-23 11:20:00.334546 base/nb_util.c:604 < NB > Checking free space for file descriptor 6
+2021-01-23 11:20:00.334550 base/nb_util.c:617 < NB > ...blocksize: 4096, free blocks: 59634747
+2021-01-23 11:20:00.334553 base/nb_file_buffer.c:434 < NB > Disk space left for file /storage/internal/nodes/321/3861/storage/1//storage.1_writing: 232948MB
+2021-01-23 11:20:00.334560 base/nb_file_buffer.c:643 < NB > start mummap...is_rec: 0
+2021-01-23 11:20:00.334564 base/commit.c:1307 < NB > Post commit
+2021-01-23 11:20:00.334567 base/commit.c:1309 < NB > Commit sequence number is 1
+2021-01-23 11:20:00.334572 base/file_interface.c:1670 < NB > Checking if file storage.2 (fullname /storage/internal/nodes/321/3861/storage/1//storage.2) exists
+2021-01-23 11:20:00.334577 base/file_interface.c:1678 < NB > ...exists
+2021-01-23 11:20:00.334580 base/file_interface.c:1688 < NB > Removing file: 'storage.2'
+2021-01-23 11:20:00.334595 base/file_interface.c:1670 < NB > Checking if file storage.2_writing (fullname /storage/internal/nodes/321/3861/storage/1//storage.2_writing) exists
+2021-01-23 11:20:00.334600 base/file_interface.c:1674 < NB > ...does not exist
+2021-01-23 11:20:00.334603 base/commit.c:498 < NB > Executing commit orders...
+2021-01-23 11:20:00.334605 base/storage.cc:204 < NB > nb_store_pop('#') called
+2021-01-23 11:20:00.334608 base/storage.cc:218 < NB > ...found RENAME 'storage.1_writing' 'storage.1'
+2021-01-23 11:20:00.334611 base/commit.c:527 < NB > Processing commit order: RENAME 'storage.1_writing' 'storage.1'
+2021-01-23 11:20:00.334621 base/commit.c:569 < NB > ...rename storage.1_writing to storage.1
+2021-01-23 11:20:00.334623 base/file_interface.c:1709 < NB > Rename file from 'storage.1_writing' to 'storage.1'
+2021-01-23 11:20:00.334635 base/storage.cc:204 < NB > nb_store_pop('#') called
+2021-01-23 11:20:00.334639 base/storage.cc:210 < NB > ...not found
+2021-01-23 11:20:00.334642 base/audit.c:1786 < NB > Closing audit file...
+2021-01-23 11:20:00.334644 base/audit.c:1791 < NB > Audit file was not open
+2021-01-23 11:20:00.334647 base/storage.cc:204 < NB > nb_store_pop('#AU_LINE') called
+2021-01-23 11:20:00.334649 base/storage.cc:210 < NB > ...not found
+2021-01-23 11:20:00.334652 base/audit.c:110 < NB > audit_reset() called
+2021-01-23 11:20:00.334657 base/datarecords.cc:368 < NB > o_reset_outout(OUTPUT) called
+2021-01-23 11:20:00.334659 base/datarecords.cc:368 < NB > o_reset_outout(#REJ_INVALID) called
+2021-01-23 11:20:00.334662 base/datarecords.cc:368 < NB > o_reset_outout(#REJ_DUPLICATE) called
+2021-01-23 11:20:00.334664 base/datarecords.cc:379 < NB > o_reset() called
+2021-01-23 11:20:00.334666 base/process.c:1098 < NB > Process_maintenance()
+2021-01-23 11:20:00.334669 base/process.c:1115 < NB > time_now: 1611393600, last_maintenance:1611393600
+2021-01-23 11:20:00.334671 base/process.c:1253 < NB > Process_handle_requests()
+2021-01-23 11:20:00.334674 base/process.c:1309 < NB > ...return from Process_handle_request(), returning OK
+2021-01-23 11:20:00.334676 base/process.c:1242 < NB > ...return from Process_maintenance(), returning OK
+2021-01-23 11:20:00.334679 base/process.c:827 < NB > Process idle loop
+2021-01-23 11:20:00.334681 base/process.c:1098 < NB > Process_maintenance()
+2021-01-23 11:20:00.334683 base/process.c:1115 < NB > time_now: 1611393600, last_maintenance:1611393600
+2021-01-23 11:20:00.334686 base/process.c:1253 < NB > Process_handle_requests()
+2021-01-23 11:20:00.334688 base/process.c:1309 < NB > ...return from Process_handle_request(), returning OK
+2021-01-23 11:20:00.334690 base/process.c:1242 < NB > ...return from Process_maintenance(), returning OK
+2021-01-23 11:20:00.334692 base/process.c:1024 < NB > Process_timer()
+2021-01-23 11:20:00.334695 base/process.c:1044 < NB > ...return from Process_timer(), returning OK
+2021-01-23 11:20:00.334697 base/process.c:1098 < NB > Process_maintenance()
+2021-01-23 11:20:00.334699 base/process.c:1115 < NB > time_now: 1611393600, last_maintenance:1611393600
+2021-01-23 11:20:00.334702 base/process.c:1253 < NB > Process_handle_requests()
+2021-01-23 11:20:00.334704 base/process.c:1309 < NB > ...return from Process_handle_request(), returning OK
+2021-01-23 11:20:00.334706 base/process.c:1242 < NB > ...return from Process_maintenance(), returning OK
+2021-01-23 11:20:00.334709 base/process.c:1054 < NB > Process_schedule(0)
+2021-01-23 11:20:00.334711 base/cron.c:136 < NB > 1611393600 seconds t since January 1, 1970
+2021-01-23 11:20:00.334714 base/process.c:1082 < NB > ...return from Process_schedule(), returning OK
+2021-01-23 11:20:00.334716 base/process.c:957 < NB > Process_flush()
+2021-01-23 11:20:00.334719 base/process.c:201 < NB > Process_open_next_file()
+2021-01-23 11:20:00.334721 base/nodebase.c:1365 < NB > File processed successfully, turning diagnostic back to default level

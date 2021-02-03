@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file storage_order="LSB" record_separator="LF">
+   <set>
+                <record name="IMS_DWH" field_separator=",">
+         <field name="dialled-Party-Address_sIP-URI">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+           <field name="record-Type">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">15</length>
+            <value type="string"></value>
+         </field>
+            <field name="retransmission">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">12</length>
+            <value type="string"></value>
+         </field>
+                 <field name="node-Address_domainName">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">21</length>
+            <value type="string"></value>
+         </field>
+                 <field name="session-ID">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">14</length>
+            <value type="string"></value>
+         </field>
+                 <field name="Calling-Party-Address_sIP-URI">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">15</length>
+            <value type="string"></value>
+         </field>
+                 <field name="Calling-Party-Address_tEL-URI">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">6</length>
+            <value type="string"></value>
+         </field>
+                 <field name="service-Request-Time-Stamp">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">10</length>
+            <value type="string"></value>
+         </field>
+                 <field name="iMS-Charging-Identifier">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">25</length>
+            <value type="string"></value>
+         </field>
+                 <field name="privateUserID">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">3</length>
+            <value type="string"></value>
+         </field>
+                 <field name="inter-Operator-Identifiers_Inter-Operator-Identifiers_terminating-IOI">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">2</length>
+            <value type="string"></value>
+         </field>
+                  <field name="role-of-Node">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">2</length>
+            <value type="string"></value>
+         </field>
+                 <field name="service-Delivery-Start-Time-Stamp">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">1</length>
+            <value type="string"></value>
+         </field>
+                  <field name="record-Opening-Time">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+        <field name="record-Opening-Time-Fraction">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		 
+		 <field name="list-Of-SDP-Media-Components_List-of-Media-Components_sIP-Request-Time-Stamp">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		 
+		 <field name="list-Of-SDP-Media-Components_List-of-Media-Components_sIP-Response-Time-Stamp">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		 
+		 <field name="list-Of-SDP-Media-Components_List-of-Media-Components_sDP-Session-Description_GraphicString">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		 
+		 <field name="list-Of-SDP-Media-Components_List-of-Media-Components_sDP-Media-Components_SDP-Media-Component_sDP-Media-Name">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		 <field name="list-Of-SDP-Media-Components_List-of-Media-Components_sDP-Media-Components_SDP-Media-Component_sDP-Media-Descriptions_GraphicString_1">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		 <field name="list-Of-SDP-Media-Components_List-of-Media-Components_sDP-Media-Components_SDP-Media-Component_sDP-Media-Descriptions_GraphicString_2">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		 
+		  <field name="list-Of-SDP-Media-Components_List-of-Media-Components_sDP-Media-Components_SDP-Media-Component_sDP-Media-Descriptions_GraphicString_3">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		  <field name="list-Of-SDP-Media-Components_List-of-Media-Components_sDP-Media-Components_SDP-Media-Component_sDP-Media-Descriptions_GraphicString_4">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		  <field name="list-Of-SDP-Media-Components_List-of-Media-Components_sDP-Media-Components_SDP-Media-Component_sDP-Media-Descriptions_GraphicString_5">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		  <field name="list-Of-SDP-Media-Components_List-of-Media-Components_sDP-Media-Components_SDP-Media-Component_sDP-Media-Descriptions_GraphicString_6">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		 
+		 
+		 <field name="applicationServersInformation_ApplicationServersInformation_applicationServersInvolved_domainName">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		 <field name="Total_volume">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		 <field name="record-Sequence-Number">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		 
+		  <field name="called-Party-Address_sIP-URI">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		 
+		 <field name="service-Reason-Return-Code">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		 
+		 <field name="service-Delivery-End-Time-Stamp">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		 
+		 <field name="record-Closure-Time">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		 
+		 <field name="record-Closure-Time-Fraction">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		 <field name="cause-For-Record-Closing">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		 
+		  <field name="duration">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		 
+		  <field name="local-Record-Sequence-Number">
+            <ascii orientation="Left" padding="" />
+            <length type="variable">5</length>
+            <value type="string"></value>
+         </field>
+		 
+         </record>
+        </set>
+</file>
